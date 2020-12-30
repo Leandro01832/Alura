@@ -1,0 +1,22 @@
+F:\Projects\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.deps.json
+F:\Projects\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.runtimeconfig.json
+F:\Projects\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.runtimeconfig.dev.json
+F:\Projects\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.dll
+F:\Projects\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.pdb
+F:\Projects\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.csprojAssemblyReference.cache
+F:\Projects\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.AssemblyInfoInputs.cache
+F:\Projects\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.AssemblyInfo.cs
+F:\Projects\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.dll
+F:\Projects\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.pdb
+F:\Projects\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.csproj.CoreCompileInputs.cache
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.deps.json
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.runtimeconfig.json
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.runtimeconfig.dev.json
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.dll
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.pdb
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.csprojAssemblyReference.cache
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.csproj.CoreCompileInputs.cache
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.AssemblyInfoInputs.cache
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.AssemblyInfo.cs
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.dll
+F:\Projects\Aulas Alura\AspNetCore\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.pdb

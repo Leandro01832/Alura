@@ -1,0 +1,11 @@
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\bin\Debug\netcoreapp2.0\AulaAluraMvc.deps.json
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\bin\Debug\netcoreapp2.0\AulaAluraMvc.runtimeconfig.json
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\bin\Debug\netcoreapp2.0\AulaAluraMvc.runtimeconfig.dev.json
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\bin\Debug\netcoreapp2.0\AulaAluraMvc.dll
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\bin\Debug\netcoreapp2.0\AulaAluraMvc.pdb
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\obj\Debug\netcoreapp2.0\AulaAluraMvc.csprojAssemblyReference.cache
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\obj\Debug\netcoreapp2.0\AulaAluraMvc.csproj.CoreCompileInputs.cache
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\obj\Debug\netcoreapp2.0\AulaAluraMvc.AssemblyInfoInputs.cache
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\obj\Debug\netcoreapp2.0\AulaAluraMvc.AssemblyInfo.cs
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\obj\Debug\netcoreapp2.0\AulaAluraMvc.dll
+F:\Projects\Aulas Alura\aula MVC\AulaAluraMvc\AulaAluraMvc\obj\Debug\netcoreapp2.0\AulaAluraMvc.pdb

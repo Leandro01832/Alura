@@ -1,0 +1,8 @@
+    Se você usa Linux, pode utilizar o Visual Studio Code
+
+
+    Se você usa Windows ou macOS, pode utilizar tanto o Visual Studio como o Visual Studio Code
+
+
+A maioria dos editores de terceiros, como Sublime, Emacs e VI, trabalham com o .NET Core.
+ Esses editores de terceiros podem utilizar o IntelliSense através da instalação da ferramenta OmniSharp.
