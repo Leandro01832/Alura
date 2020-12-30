@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html data-product="alura" class="" lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Page hiding snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script async="" src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script type="text/javascript" async="" src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gtm.js"></script><script>
+	(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-TN542JN':true});
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'ASP.NET Core Parte 4: IdentityServer'
+        });
+	</script>
+
+	
+
+	<title>ASP.NET Core Parte 4: Aula 6 - Atividade 12 Criando a Página de Registro de Usuário | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/css.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.css">
+
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/base.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/formattedText.css">
+	
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/container.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskProgress.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskMessageInfo.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/alternativeList.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedback.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdown.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/finishSection.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hqexplanation.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/openquestion.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/textcontent.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/singlechoice.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/music.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/multiplechoice.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videodialog.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/fillintheblank.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/speakingpractice.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/pronunciationpractice.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/repetition.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/genericVideo.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projectSubmit.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/extraContentTask.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskContent.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskButtons.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/notes.css">
+	
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dark-mode.css">
+	<link rel="stylesheet" href="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedbackAnswer.css">
+
+
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+	</style>
+
+
+	<script async="" src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hotjar-1638253.js"></script><script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sha256.js"></script><script async="" src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<section class="task" data-allow-answer="true" data-task-section-exam="false" data-task-type="hqexplanation" data-task-id="59629" data-author-id="437065" data-course-code="aspnet-core-identity-server" data-section-name="Configurando IdentityServer4 + WebAPI de Relatório" data-section-id="8605" data-section-number="6" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<section class="task-body">
+		
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					
+					
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>12</small>
+					<span class="task-body-header-title-text"> Criando a Página de Registro de Usuário</span>
+				</h1>
+				
+					<div class="task-body-header-actions">
+						<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59629/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+					</div>
+				
+			</div>
+		</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de 
+anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para 
+você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/aspnet-core-identity-server/59629/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<div class="formattedText" data-external-links="">
+			<h1>Tutorial: Criando uma Página de Registro de Usuário</h1>
+<p>Seja bem-vindo à <strong>atividade extra</strong> do curso ASP.NET Core Parte 4: IdentityServer!</p>
+<p>Na pasta <strong>[Item07]</strong> você encontra projetos com <strong>código extra</strong> que não foi mostrado nesse curso. Nesses projetos, temos uma <strong>nova página de registro de usuários</strong>, que não aparece nos vídeos do curso. </p>
+<p><img src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/register.png" alt="enter image description here"></p>
+<p>Esta é uma atividade <strong>opcional</strong>. Você pode 
+simplesmente rodar os projetos do Item07 para ver como o registro de 
+usuários funciona. Se você quiser, pode pular esta atividade e finalizar
+ o curso, sem problemas! Mas se fizer este tutorial, você aprenderá a 
+criar uma nova página de registro de usuário para o projeto 
+CasaDoCodigo.IdentityServer. Você poderá aplicar esse conhecimento em 
+projetos no seu dia a dia!</p>
+<p>Neste curso, aprendemos a criar, configurar e integrar um projeto 
+IdentityServer ao restante da solução da Casa do Código. Como vimos, é 
+possível fazer login através da <code>view Login</code> do 
+IdentityServer. Para implementar essa view e sua action correspondente, o
+ projeto IdentityServer utiliza o ciclo de vida de usuário do ASP.NET 
+Core Identity.</p>
+<p>O problema é que o template projeto IdentityServer, que foi criado 
+automaticamente, não possui uma página nem action para registrar novos 
+usuários. Se quisermos, teremos que implementar manualmente uma nova 
+página de registro de usuários. Então, neste tutorial, vamos aprender a 
+implementar essa nova funcionalidade para o registro de usuários.</p>
+<h3>1. Criando a pasta Item07</h3>
+<p>Como você deve ter percebido, existem na solução as pastas <strong>[antes]</strong> e <strong>[depois]</strong>. Dentro da pasta <strong>[antes]</strong>, faça uma cópia da pasta <strong>[Item06]</strong> para uma nova pasta <strong>[Item07]</strong>. A partir daí, defina os 3 projetos dentro de <strong>[Item07]</strong> como <strong><em>projetos de inicialização (startup projects)</em></strong> da solução.</p>
+<p>Feito isso, as instruções abaixo vão orientar e explicar as mudanças 
+necessárias para criação da nova página de registro de usuário.</p>
+<h3>2. Criando o modelo de registro</h3>
+<p>O projeto CasaDoCodigo.IdentityServer também é um projeto MVC, 
+portanto, precisamos criar o modelo, criar a view e adaptar o controller
+ para trabalhar com registro de usuários.</p>
+<p>Vamos começar pelo modelo de registro de novos usuários e criar uma 
+classe de modelo com dados a serem exibidos na view de login. Como o 
+conjunto de dados necessários é semelhante à view de login, fazemos uma 
+cópia da classe <code>LoginInputModel</code> e a chamamos de <code>RegisterInputModel</code>. Porém, a classe <code>LoginInputModel</code> não possui a informação de e-mail. Portanto, adicionamos uma nova propriedade para o e-mail do usuário: </p>
+<pre class="prettyprint"><code><span class="pln">        </span><span class="pun">[</span><span class="typ">Required</span><span class="pun">]</span><span class="pln">
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">string</span><span class="pln"> </span><span class="typ">Email</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">get</span><span class="pun">;</span><span class="pln"> </span><span class="kwd">set</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code></pre>
+<p>Então, copiamos o código da classe <code>LoginViewModel</code> para uma nova classe <code>RegisterViewModel</code>, mudando o nome, assim:</p>
+<pre class="prettyprint"><code><span class="pln">    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">RegisterViewModel</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="typ">RegisterInputModel</span></code></pre>
+<p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Quickstart\Account\RegisterViewModel.cs</em></strong></p>
+<p>Vamos para a classe <code>AccountController</code>, na qual iremos criar um novo método <code>BuildRegisterViewModelAsync</code>, copiado a partir do método preexistente <code>BuildLoginViewModelAsync</code>. Em seguida, vamos modificar estas 3 linhas:</p>
+<pre class="prettyprint"><code><span class="kwd">private</span><span class="pln"> async </span><span class="typ">Task</span><span class="pun">&lt;</span><span class="typ">RegisterViewModel</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">BuildRegisterViewModelAsync</span><span class="pun">(</span><span class="kwd">string</span><span class="pln"> returnUrl</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">...</span><span class="pln">
+</span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RegisterViewModel</span><span class="pln">
+</span><span class="pun">...</span><span class="pln">
+</span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RegisterViewModel</span></code></pre>
+<p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Quickstart\Account\AccountController.cs</em></strong></p>
+<p>Agora fazemos uma cópia do método <code>BuildLoginViewModelAsync(LoginInputModel model)</code> e o chamamos de <code>BuildRegisterViewModelAsync(RegisterInputModel model)</code>:</p>
+<pre class="prettyprint"><code><span class="kwd">private</span><span class="pln"> async </span><span class="typ">Task</span><span class="pun">&lt;</span><span class="typ">RegisterViewModel</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">BuildRegisterViewModelAsync</span><span class="pun">(</span><span class="typ">RegisterInputModel</span><span class="pln"> model</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> 
+</span><span class="kwd">var</span><span class="pln"> vm </span><span class="pun">=</span><span class="pln"> await </span><span class="typ">BuildRegisterViewModelAsync</span><span class="pun">(</span><span class="pln">model</span><span class="pun">.</span><span class="typ">ReturnUrl</span><span class="pun">);</span></code></pre>
+<h3>3. Criando as actions de registro</h3>
+<p>Ótimo, já temos as classes que servirão de modelo. Agora partiremos 
+para a action de registro de novos usuários. Para isso, criaremos o 
+método <code>Register()</code> abaixo, na classe <code>AccountController</code>:</p>
+<pre class="prettyprint"><code><span class="com">/// &lt;summary&gt;</span><span class="pln">
+</span><span class="com">/// Exibe a página de registro de usuários</span><span class="pln">
+</span><span class="com">/// &lt;/summary&gt;</span><span class="pln">
+</span><span class="pun">[</span><span class="typ">HttpGet</span><span class="pun">]</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> async </span><span class="typ">Task</span><span class="pun">&lt;</span><span class="typ">IActionResult</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Register</span><span class="pun">(</span><span class="kwd">string</span><span class="pln"> returnUrl</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// construir um modelo com dados a serem exibidos na view de login</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> vm </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">View</span><span class="pun">(</span><span class="pln">vm</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Quickstart\Account\AccountController.cs</em></strong></p>
+<p>Note que, ao final da action, a view referente a essa action é retornada.</p>
+<p>Mas a viewmodel, representada aqui pela variável <code>vm</code>, precisa ser inicializada com os dados que serão injetados na view de <code>Register.cshtml</code>.</p>
+<p>Esse novo método toma como parâmetro a url de retorno, isto é, a url 
+para onde o usuário será redirecionado ao final do processo de registro.</p>
+<pre class="prettyprint"><code><span class="pun">[</span><span class="typ">HttpGet</span><span class="pun">]</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> async </span><span class="typ">Task</span><span class="pun">&lt;</span><span class="typ">IActionResult</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Register</span><span class="pun">(</span><span class="kwd">string</span><span class="pln"> returnUrl</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// construir um modelo com dados a serem exibidos na view de login</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> vm </span><span class="pun">=</span><span class="pln"> await </span><span class="typ">BuildRegisterViewModelAsync</span><span class="pun">(</span><span class="pln">returnUrl</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">View</span><span class="pun">(</span><span class="pln">vm</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora vamos criar um outro método <code>Register</code> no controller, porém, desta vez, com uma assinatura diferente: esta sobrecarga (overload) recebe um parâmetro <code>RegisterInputModel</code>.</p>
+<pre class="prettyprint"><code><span class="com">/// &lt;summary&gt;</span><span class="pln">
+</span><span class="com">/// Handle postback from username/password register</span><span class="pln">
+</span><span class="com">/// &lt;/summary&gt;</span><span class="pln">
+</span><span class="pun">[</span><span class="typ">HttpPost</span><span class="pun">]</span><span class="pln">
+</span><span class="pun">[</span><span class="typ">ValidateAntiForgeryToken</span><span class="pun">]</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> async </span><span class="typ">Task</span><span class="pun">&lt;</span><span class="typ">IActionResult</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Register</span><span class="pun">(</span><span class="typ">RegisterInputModel</span><span class="pln"> model</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">string</span><span class="pln"> button</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">button </span><span class="pun">!=</span><span class="pln"> </span><span class="str">"register"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>O próximo passo é verificar o <em>consentimento</em> do usuário. Isso é feito no objeto <code>_interaction</code>, através dos métodos <code>GetAuthorizationContextAsync()</code> e <code>GrantConsentAsync()</code>.</p>
+<p>O objeto <code>_interaction</code> é uma instância da interface <code>IIdentityServerInteractionService</code>,
+ que fornece serviços a serem usados pela interface do usuário para se 
+comunicar com o IdentityServer. O método obtém o contexto de 
+autorização, enquanto <code>GrantConsentAsync()</code> notifica o IdentityServer sobre o consentimento do usuário.</p>
+<pre class="prettyprint"><code><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">button </span><span class="pun">!=</span><span class="pln"> </span><span class="str">"register"</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// o usuário clicou no botão "cancelar"</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> context </span><span class="pun">=</span><span class="pln"> await _interaction</span><span class="pun">.</span><span class="typ">GetAuthorizationContextAsync</span><span class="pun">(</span><span class="pln">model</span><span class="pun">.</span><span class="typ">ReturnUrl</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">context </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// se um usuário cancela, enviamos o resultado de volta para o IdentityServer como acesso negado</span><span class="pln">
+        await _interaction</span><span class="pun">.</span><span class="typ">GrantConsentAsync</span><span class="pun">(</span><span class="pln">context</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ConsentResponse</span><span class="pun">.</span><span class="typ">Denied</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="com">// podemos confiar em model.ReturnUrl, pois GetAuthorizationContextAsync retornou não-nulo</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">Redirect</span><span class="pun">(</span><span class="pln">model</span><span class="pun">.</span><span class="typ">ReturnUrl</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">else</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// já que não temos um contexto válido, voltamos para a página inicial</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">Redirect</span><span class="pun">(</span><span class="str">"~/"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Se o usuário clicou em "registrar" e o estado do modelo é válido, então criamos uma nova instância de usuário da aplicação (<code>ApplicationUser</code>) e criamos o usuário na base de dados SQLite do projeto, utilizando o método <code>CreateAsync()</code> da classe <code>UserManager</code> do ASP.NET Core Identity:</p>
+<pre class="prettyprint"><code><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">button </span><span class="pun">!=</span><span class="pln"> </span><span class="str">"login"</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ModelState</span><span class="pun">.</span><span class="typ">IsValid</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> user </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ApplicationUser</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">UserName</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> model</span><span class="pun">.</span><span class="typ">Username</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Email</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> model</span><span class="pun">.</span><span class="typ">Email</span><span class="pln"> </span><span class="pun">};</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> await _userManager</span><span class="pun">.</span><span class="typ">CreateAsync</span><span class="pun">(</span><span class="pln">user</span><span class="pun">,</span><span class="pln"> model</span><span class="pun">.</span><span class="typ">Password</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">            </span></code></pre>
+<p>O próximo passo é definir os dados do usuário criado. Como vimos no curso, as <em>declarações</em> (claims) são usadas para obter esses dados, incluindo e-mail e nome do usuário. Aqui, vamos chamar o método <code>AddClaimsAsync</code> da classe <code>UserManager</code> para adicionar as declarações ao usuário criado:</p>
+<pre class="prettyprint"><code><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">result</span><span class="pun">.</span><span class="typ">Succeeded</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    await _signInManager</span><span class="pun">.</span><span class="typ">SignInAsync</span><span class="pun">(</span><span class="pln">user</span><span class="pun">,</span><span class="pln"> isPersistent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">var</span><span class="pln"> claimsResult </span><span class="pun">=</span><span class="pln"> _userManager</span><span class="pun">.</span><span class="typ">AddClaimsAsync</span><span class="pun">(</span><span class="pln">user</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Claim</span><span class="pun">[]{</span><span class="pln">
+        </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Claim</span><span class="pun">(</span><span class="str">"name"</span><span class="pun">,</span><span class="pln"> user</span><span class="pun">.</span><span class="typ">UserName</span><span class="pun">),</span><span class="pln">
+        </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Claim</span><span class="pun">(</span><span class="typ">JwtClaimTypes</span><span class="pun">.</span><span class="typ">GivenName</span><span class="pun">,</span><span class="pln"> </span><span class="str">""</span><span class="pun">),</span><span class="pln">
+        </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Claim</span><span class="pun">(</span><span class="typ">JwtClaimTypes</span><span class="pun">.</span><span class="typ">FamilyName</span><span class="pun">,</span><span class="pln"> </span><span class="str">""</span><span class="pun">),</span><span class="pln">
+        </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Claim</span><span class="pun">(</span><span class="str">"email"</span><span class="pun">,</span><span class="pln"> user</span><span class="pun">.</span><span class="typ">Email</span><span class="pun">),</span><span class="pln">
+        </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Claim</span><span class="pun">(</span><span class="typ">JwtClaimTypes</span><span class="pun">.</span><span class="typ">EmailVerified</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ClaimValueTypes</span><span class="pun">.</span><span class="typ">Boolean</span><span class="pun">),</span><span class="pln">
+    </span><span class="pun">}).</span><span class="typ">Result</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">claimsResult</span><span class="pun">.</span><span class="typ">Succeeded</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Exception</span><span class="pun">(</span><span class="pln">result</span><span class="pun">.</span><span class="typ">Errors</span><span class="pun">.</span><span class="typ">First</span><span class="pun">().</span><span class="typ">Description</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">Redirect</span><span class="pun">(</span><span class="pln">model</span><span class="pun">.</span><span class="typ">ReturnUrl</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Ao final da action, caso algo tenha dado errado, uma mensagem de erro
+ será incluída no modelo para ser exibida na view de registro:</p>
+<pre class="prettyprint"><code><span class="pln">            </span><span class="pun">.</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">Redirect</span><span class="pun">(</span><span class="pln">model</span><span class="pun">.</span><span class="typ">ReturnUrl</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="kwd">foreach</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> error </span><span class="kwd">in</span><span class="pln"> result</span><span class="pun">.</span><span class="typ">Errors</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">ModelState</span><span class="pun">.</span><span class="typ">AddModelError</span><span class="pun">(</span><span class="pln">error</span><span class="pun">.</span><span class="typ">Code</span><span class="pun">,</span><span class="pln"> error</span><span class="pun">.</span><span class="typ">Description</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="com">// algo deu errado, vamos mostar a view com o erro</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> vm </span><span class="pun">=</span><span class="pln"> await </span><span class="typ">BuildRegisterViewModelAsync</span><span class="pun">(</span><span class="pln">model</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">View</span><span class="pun">(</span><span class="pln">vm</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<h3>4. Criando e modificando views</h3>
+<p><img src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/register-link.png" alt="enter image description here"></p>
+<p>Vamos fazer uma cópia do arquivo <code>Login.cshtml</code> e o chamamos de <code>Register.cshtml</code>.</p>
+<p>Nesta nova view, vamos adicionar o suporte para o novo campo <code>Email</code> e trocar o botão <code>Login</code> para <code>Register</code>:</p>
+<pre class="prettyprint"><code><span class="lit">@model</span><span class="pln"> </span><span class="typ">RegisterViewModel</span><span class="pln">
+</span><span class="pun">...</span><span class="pln">
+</span><span class="pun">&lt;</span><span class="pln">form asp</span><span class="pun">-</span><span class="pln">route</span><span class="pun">=</span><span class="str">"Register"</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">...</span><span class="pln">
+    </span><span class="str">&lt;fieldset&gt;</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"form-group"</span><span class="pun">&gt;</span><span class="pln">
+            </span><span class="pun">&lt;</span><span class="pln">label asp</span><span class="pun">-</span><span class="kwd">for</span><span class="pun">=</span><span class="str">"Email"</span><span class="pun">&gt;&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+            </span><span class="pun">&lt;</span><span class="pln">input </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"form-control"</span><span class="pln"> placeholder</span><span class="pun">=</span><span class="str">"Email"</span><span class="pln"> asp</span><span class="pun">-</span><span class="kwd">for</span><span class="pun">=</span><span class="str">"Email"</span><span class="pln"> autofocus</span><span class="pun">&gt;</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label asp-for="Username"&gt;&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+            </span><span class="pun">&lt;</span><span class="pln">input </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"form-control"</span><span class="pln"> placeholder</span><span class="pun">=</span><span class="str">"Username"</span><span class="pln"> asp</span><span class="pun">-</span><span class="kwd">for</span><span class="pun">=</span><span class="str">"Username"</span><span class="pun">&gt;</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+...
+        &lt;div class="form-group"&gt;
+            &lt;button class="btn btn-primary" name="button" value="register"&gt;Register&lt;/</span><span class="pln">button</span><span class="pun">&gt;</span><span class="pln">
+            </span><span class="pun">&lt;</span><span class="pln">button </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"btn btn-default"</span><span class="pln"> name</span><span class="pun">=</span><span class="str">"button"</span><span class="pln"> value</span><span class="pun">=</span><span class="str">"cancel"</span><span class="pun">&gt;</span><span class="typ">Cancel</span><span class="pun">&lt;</span><span class="str">/button&gt;
+        &lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></pre>
+<p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Views\Account\Register.cshtml</em></strong></p>
+<p>Outra modificação necessária é importar o namespace <code>@using CasaDoCodigo.IdentityServer.Quickstart.Account</code> no arquivo de imports da aplicação MVC:</p>
+<pre class="prettyprint"><code><span class="pun">﻿</span><span class="lit">@using</span><span class="pln"> </span><span class="typ">IdentityServer4</span><span class="pun">.</span><span class="typ">Quickstart</span><span class="pun">.</span><span class="pln">UI
+</span><span class="lit">@using</span><span class="pln"> </span><span class="typ">CasaDoCodigo</span><span class="pun">.</span><span class="typ">IdentityServer</span><span class="pun">.</span><span class="typ">Quickstart</span><span class="pun">.</span><span class="typ">Account</span><span class="pln">
+</span><span class="lit">@addTagHelper</span><span class="pln"> </span><span class="pun">*,</span><span class="pln"> </span><span class="typ">Microsoft</span><span class="pun">.</span><span class="typ">AspNetCore</span><span class="pun">.</span><span class="typ">Mvc</span><span class="pun">.</span><span class="typ">TagHelpers</span></code></pre>
+<p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Views_ViewImports.cshtml</em></strong></p>
+<p>Por fim, vamos modificar a view de login para incluir um ponto de 
+acesso à nova view de registro. Isso é feito através de uma simples <code>AnchorTagHelper</code> (<code>&lt;a&gt;</code>) apontando para a action <code>Register</code> de <code>AccountController</code>.</p>
+<pre class="prettyprint"><code><span class="pun">...</span><span class="pln">
+</span><span class="str">&lt;div&gt;</span><span class="pln">
+    </span><span class="pun">...</span><span class="kwd">or</span><span class="pln"> click to </span><span class="pun">&lt;</span><span class="pln">a asp</span><span class="pun">-</span><span class="pln">controller</span><span class="pun">=</span><span class="str">"account"</span><span class="pln"> asp</span><span class="pun">-</span><span class="pln">action</span><span class="pun">=</span><span class="str">"register"</span><span class="pln"> asp</span><span class="pun">-</span><span class="pln">route</span><span class="pun">-</span><span class="pln">returnUrl</span><span class="pun">=</span><span class="str">"@Model.ReturnUrl"</span><span class="pln"> </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"PostLogoutRedirectUri"</span><span class="pun">&gt;&lt;</span><span class="pln">b</span><span class="pun">&gt;</span><span class="kwd">register</span><span class="pun">&lt;</span><span class="str">/b&gt;&lt;/</span><span class="pln">a</span><span class="pun">&gt;</span><span class="pln"> a </span><span class="kwd">new</span><span class="pln"> user</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">...</span></code></pre>
+<p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Views\Account\Login.cshtml</em></strong></p>
+<h3>5. Habilitando o e-mail no cadastro do usuário</h3>
+<p>Durante o curso, vimos que o e-mail não estava disponível no acesso 
+aos dados do usuário. Podemos adicionar o e-mail às declarações do 
+usuário (claims) através dos seguintes passos.</p>
+<p>Primeiro, modifique as configurações no projeto IdentityServer para 1) incluir o e-mail como um recurso de identidade (<code>IdentityResource</code>) e 2) incluir o e-mail também como um escopo permitido ao cliente CasaDoCodigo.MVC: </p>
+<pre class="prettyprint"><code><span class="kwd">new</span><span class="pln"> </span><span class="typ">IdentityResources</span><span class="pun">.</span><span class="typ">Email</span><span class="pun">()</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">AllowedScopes</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="str">"openid"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"profile"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"email"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"CasaDoCodigo.Relatorio"</span><span class="pln"> </span><span class="pun">}</span></code></pre><p><strong><em>Arquivo: \Item07\CasaDoCodigo.IdentityServer\Config.cs</em></strong></p>
+<p>Agora, na classe <code>PedidoController</code>, atribua o valor do e-mail da declaração do usuário ao objeto de cadastro do modelo:</p>
+<pre class="prettyprint"><code><span class="pln">pedido</span><span class="pun">.</span><span class="typ">Cadastro</span><span class="pun">.</span><span class="typ">Email</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="typ">User</span><span class="pun">.</span><span class="typ">FindFirst</span><span class="pun">(</span><span class="str">"email"</span><span class="pun">)?.</span><span class="typ">Value</span><span class="pun">;</span></code></pre><p><strong><em>Arquivo: \Item07\CasaDoCodigo\Controllers\PedidoController.cs</em></strong></p>
+<p>Por fim, entre na classe <code>Startup</code> do projeto MVC da Casa do Código e inclua o e-mail na lista de escopos do OpenId Connect:</p>
+<pre class="prettyprint"><code><span class="pln">options</span><span class="pun">.</span><span class="typ">Scope</span><span class="pun">.</span><span class="typ">Add</span><span class="pun">(</span><span class="str">"email"</span><span class="pun">);</span></code></pre><p><strong><em>Arquivo: \Item07\CasaDoCodigo\Startup.cs</em></strong></p>
+<p>Pronto! Agora você já sabe como criar uma página de registro de usuário no projeto IdentityServer!</p>
+<p><img src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/register.png" alt="enter image description here"></p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-aspnet-core-identity-server/exercicio-criando-a-pagina-de-registro-de-usuario/59629/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59629/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-272px);">
+	<section class="task-menu-header">
+		<button title="Fechar menu" aria-label="Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/aspnet-core-identity-server" title="Ir para página do curso">
+				
+					
+					
+						<img src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aspnet-core-identity-server.svg" alt="ícone ASP.NET Core Parte 4: IdentityServer" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">ASP.NET Core Parte 4: IdentityServer</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">100%</span>
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 100%, transparent 100%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+	<div class="task-menu-others task-menu-notes">
+		<button class="task-menu-others-link class-notes-button" title="Abrir caderno">Abrir caderno</button>
+	</div>
+
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>06</strong>
+				<span>de 06</span></span>
+			<h3 class="task-menu-section-title-text">
+				Configurando IdentityServer4 + WebAPI de Relatório
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>12 de 13</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59470" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Protegendo Acesso ao Relatório de Vendas">
+							Protegendo Acesso ao Relatório de Vendas
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">07min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59471" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Configurando Escopos Permitidos">
+							Configurando Escopos Permitidos
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59472" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Configurando o Projeto IdentityServer">
+							Configurando o Projeto IdentityServer
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59473" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Configurando o Projeto RelatorioWebAPI">
+							Configurando o Projeto RelatorioWebAPI
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">14min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59474" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Obtendo o Token de Acesso">
+							Obtendo o Token de Acesso
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">17min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59489" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Fazendo requisição a um serviço protegido">
+							Fazendo requisição a um serviço protegido
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59490" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Múltipla escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Token de Acesso">
+							Token de Acesso
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59475" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Chamando a API">
+							Chamando a API
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">13min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59476" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Conclusão">
+							Conclusão
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">05min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59478" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Código-Fonte do Curso">
+							Código-Fonte do Curso
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59529" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Faça o que eu fiz na aula">
+							Faça o que eu fiz na aula
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59629" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Criando a Página de Registro de Usuário">
+							Criando a Página de Registro de Usuário
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/aspnet-core-identity-server/task/59522" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">13</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O que aprendemos?">
+							O que aprendemos?
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/aspnet-core-identity-server/section/'+this.value+'/tasks';">
+			
+				<option value="8600">01. Criando Web API de Relatório</option>
+			
+				<option value="8601">02. Consumindo Web API de Relatório</option>
+			
+				<option value="8602">03. Criando e Executando Projeto IdentityServer4</option>
+			
+				<option value="8603">04. Configurando IdentityServer + Cliente MVC</option>
+			
+				<option value="8604">05. Acessando Dados do Usuário</option>
+			
+				<option value="8605" selected="selected">06. Configurando IdentityServer4 + WebAPI de Relatório</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-aspnet-core-identity-server/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/perinng" title="Ir para sua página de usuário">
+			<img src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/c5e9ead7f80a8ed147549256414ffdf9.webp" alt="Gravatar de PAULO FELIPE PERIN DA CRUZ" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">PAULO FELIPE PERIN DA CRUZ</span>
+					<span class="task-menu-footer-detalhes-xp">
+						33.6k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" title="Ir para a página principal" width="19px" height="32px">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/jquery-2.js"></script><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/buttonToggle.js" async=""></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sectionMenu.js" async=""></script>
+
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/marked.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.js" async=""></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/caret.js" async=""></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/keydownWatchers.js" async=""></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.js" async=""></script>
+
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/preventsMultipleInteractions.js" async=""></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/assessment.js" async=""></script>
+
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aria.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ProjectSubmit.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/feedback.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ExtraContentProgressRequest.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/partitura.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioProgress.js"></script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.js"></script>
+
+		
+
+	
+
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/darkMode.js">
+	</script>
+
+	
+		
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '437065');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+	<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ClassNotes.js">
+	</script>
+<script>
+	new ClassNotes().refreshListeners();
+</script>
+
+
+
+
+
+
+<script src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/MarkdownProcessing.js"></script>
+<script>
+	new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+</script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="ASP.NET%20Core%20Parte%204%20Aula%206%20-%20Atividade%2012%20Criando%20a%20P%C3%A1gina%20de%20Registro%20de%20Usu%C3%A1rio%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>
