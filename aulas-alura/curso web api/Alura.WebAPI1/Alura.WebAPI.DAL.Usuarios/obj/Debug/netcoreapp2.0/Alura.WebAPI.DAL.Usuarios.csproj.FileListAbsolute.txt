@@ -1,0 +1,9 @@
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\bin\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.deps.json
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\bin\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.dll
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\bin\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.pdb
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.AssemblyInfoInputs.cache
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.AssemblyInfo.cs
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.dll
+F:\Projects\AulasAlura\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.pdb
