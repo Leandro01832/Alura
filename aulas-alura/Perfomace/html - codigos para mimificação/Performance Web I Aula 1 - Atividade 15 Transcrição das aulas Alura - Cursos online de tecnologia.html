@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html data-product="alura" class="" lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Page hiding snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script type="text/javascript" async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gtm.js"></script><script>
+	(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-TN542JN':true});
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'Performance Web I: otimizando o front-end'
+        });
+	</script>
+
+	
+
+	<title>Performance Web I: Aula 1 - Atividade 15 Transcrição das aulas | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/css.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.css">
+
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/base.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/formattedText.css">
+	
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/container.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskProgress.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskMessageInfo.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/alternativeList.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedback.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdown.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/finishSection.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hqexplanation.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/openquestion.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/textcontent.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/singlechoice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/music.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/multiplechoice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videodialog.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/fillintheblank.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/speakingpractice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/pronunciationpractice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/repetition.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/genericVideo.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projectSubmit.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/extraContentTask.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskContent.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskButtons.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/notes.css">
+	
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dark-mode.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedbackAnswer.css">
+
+
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+	</style>
+
+
+	<script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hotjar-1638253.js"></script><script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sha256.js"></script><script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<section class="task menu--inactive" data-allow-answer="true" data-task-section-exam="false" data-task-type="hqexplanation" data-task-id="16594" data-author-id="437065" data-course-code="otimizacao-performance-web" data-section-name="Economizando bytes" data-section-id="4011" data-section-number="1" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<section class="task-body">
+		
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					
+					
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>15</small>
+					<span class="task-body-header-title-text"> Transcrição das aulas</span>
+				</h1>
+				
+					<div class="task-body-header-actions">
+						<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16594/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+					</div>
+				
+			</div>
+		</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de 
+anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para 
+você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/otimizacao-performance-web/16594/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<div class="formattedText" data-external-links="">
+			<p>A performance é bastante importante, pois, todos queremos um site 
+rápido. Um site mais rápido deixa os usuários mais satisfeitos e 
+usuários mais felizes compram mais da marca, acabam voltando mais ao 
+site e falam melhor dele para as pessoas. Portanto, o que buscamos é um 
+site mais rápido. </p>
+<p>Nesse curso, trataremos sobre otimização de performance nas  páginas "html" de nossos sites.</p>
+<p>Duas das primeiras perguntas que as pessoas normalmente fazem a respeito desse curso são: </p>
+<p>Que tipo de otimizações? </p>
+<p>Por que este curso está na categoria de <em>front-end</em>?</p>
+<p>Porque, normalmente, em um site temos duas frentes envolvidas. A primeira delas é o <em>back-end</em> que é onde desenvolvemos as coisas no servidor, é onde escrevemos o código <em>java</em>, <em>php</em> e etc. E a segunda dela que é o  <em>Front-End</em>, que é onde fica o <em>html</em>, <em>css</em>, <em>java script</em> e etc. </p>
+<p>Nesse curso, focaremos em performance de <em>Front-End</em>. O que isso quer dizer? Não falaremos de performance de banco de dados, não falaremos de como escrever o melhor código <em>php</em> ou coisas do tipo.</p>
+<p>Falaremos de como melhorar a performance do ponto de vista do  <em>html</em>, <em>css</em>, <em>java script</em> e etc. Isso é muito bacana pois de aplica a todo o tipo de cenário, aplicativo <em>web</em>, de site, não interessa se alguém utiliza <em>php</em>, <em>java</em> etc. A pessoa utilizará <em>java script</em>, <em>html</em>, <em>ccs</em>. </p>
+<p>Esse curso não só apela para todos que trabalham com <em>web</em> ou <em>back-end</em>, pois, vários estudos mostram que a performance final conta muito para o usuário. </p>
+<p>É a performance que conta para o usuário, quando ele abre algo no 
+navegador, no celular, no 3G. A performance que o usuário sente é, 
+geralmente, mais atribuída ao <em>front-end</em> do que do <em>back-end</em>. </p>
+<p>O que queremos dizer com isso? A não ser que você esteja fazendo algo muito grave no <em>back-end</em>,
+ uma busca no banco de dados e que esta seja extremamente demorada, 
+geralmente, na prática, o maior gargalo de performance dos site reais 
+acaba sendo em técnicas de <em>front-end</em>.</p>
+<p>Como assim?</p>
+<p>Bom, coisas como: como fazemos para carregar o <em>css</em>, como fazemos para carregar o <em>java script</em>, como criamos as imagens e disponibilizamos elas?</p>
+<p>Tudo isso acaba afetando, a prática, o mundo real e muito as páginas <em>web</em>, independente do <em>back-end</em> que estamos utilizando.</p>
+<p>Então, por isso, é interessante que discutamos esse tema. Esse é o 
+foco do curso número 1 de performance e também do curso número 2 que 
+continua depois dele. </p>
+<p>Então, o que faremos nesse curso?</p>
+<p>O nosso projeto é desenvolver um site, no caso, o site do <em>Alura</em>. Ele já está pronto e temos a seguinte versão atual:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/performance_1_1_sitealura.png"></p>
+<p>O site vai ser mudado e talvez a versão que tenhamos hoje já esteja distinta a que aparece na imagem.</p>
+<p>Os arquivos iniciais serão fornecidos e a ideia é que esse site do <em>Alura</em> que já foi desenvolvido e já está codificado, mas que não é uma versão otimizada, seja melhorado.</p>
+<p>A ideia é que localizemos quais são os gargalos de performance que a 
+página possui, analisar esses gargalos, perceber seus impactos e 
+corrigir isso, melhorando essa página. Nosso site ficará mais rápido do 
+que é atualmente. Interativamente, visualmente, ele permanecerá o mesmo,
+ mas ele estará muito mais rápido do que antes.</p>
+<p>Ao longo do curso veremos diversas técnicas diferentes que são capazes de melhorar a performance. </p>
+<p>Uma coisa que mapeia diretamente a performance do site é o tamanho 
+dele, isto é, dos arquivos que teremos que baixar. Uma primeira coisa 
+que podemos fazer para otimizar o nosso site é diminuir o tamanho dos 
+arquivos do nosso site. </p>
+<p>Tem um jeito óbvio de fazer isso que é cortar funcionalidades, isto 
+é, assim faremos menos coisas e, consequentemente teremos um código 
+menor. Mas, a ideia é que continuemos com o nosso site completo e 
+veremos aqui como otimizá-lo em relação ao tamanho.</p>
+<p>Precisamos pensar que tipo de dados estamos enviando para o navegador
+ e que tipo de dados são desnecessários para serem enviados. Se olharmos
+ nosso código fonte e observarmos, por exemplo, o <em>css</em>, ele é normal e igual ao que estamos acostumados a escrever, inclusive, temos diversos comentários nesse <em>css</em>:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_1mostrandoespaosecomentrios.png"></p>
+<p>Pense o seguinte, é interessante para o navegador renderizar esses comentários? Não. Eles existem para o desenvolvedor. </p>
+<p>Para a execução da página esses comentários são desnecessários, assim
+ como os espaços, os "Enter", que organizam o código. Eles não precisam 
+constar, aliás, podemos juntar várias coisas na mesma linha que 
+continuará a ser um <em>css</em> válido. Imagine quantos espaços, "Tab",
+ "Enter" e comentários que existem em nosso código e que são 
+desnecessários no momento da execução. Podemos remover tudo isso e 
+diminuir o tamanho de nossos arquivos. </p>
+<p>Por que deixamos o código cheio de espaços? Porque nós humanos precisamos entender o que está escrito nele.</p>
+<p>Removemos isso "na mão"? Existem ferramentas que fazem isso por nós, chamamos esse procedimento de minificar. </p>
+<p>Vamos dar um <em>google</em> em <em>minify css js</em>. Entraremos no site <a href="http://refresh-sf.com/" rel="nofollow noopener" target="_blank">refresh-sf.com</a> e mostraremos como funciona uma ferramenta de minificação.</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perform1_2_2mostradoositerefresh.png"> </p>
+<p>Selecionaremos todo o código do nosso <em>css</em>, copiaremos e colaremos no campo em branco desse site. Clicaremos o botão <em>css</em>
+ e ele devolve o código minificado, como podemos observar na imagem 
+acima. Ele informa quantos kbytes tínhamos e quanto temos agora. Observe
+ no canto direito abaixo do campo, tínhamos cerca de "1002 KB" e agora 
+temos "725 bytes", ou seja, economizamos cerca de 30% do tamanho desse 
+arquivo.</p>
+<p>Podemos fazer esse mesmo procedimento com o <em>java script</em>. A única coisa que faremos de diferente é apertar o botão <em>Javascript</em> ao em vez do botao <em>css</em>. </p>
+<p>Vamos observar agora os programas que já baixamos.</p>
+<p>Você já reparou nas ferramentas que você baixou?</p>
+<p>Por exemplo, o <em>jquery</em>, ele possui um tamanho relativamente 
+grande, "229KB". Você já reparou que no momento em que baixamos essas 
+ferramentas elas possuem algumas opções, por exemplo, se formos no site 
+do <em>jquery</em>, o <a href="http://jquery.com/download/" rel="nofollow noopener" target="_blank">jquery.com/download/</a>
+ ele nos pergunta se desejamos baixar a versão comprimida ou 
+descomprimida. Isso significa que a a versão descomprimida é o código 
+gigante, cheio de comentários e espaços. A versão comprimida é um código
+ com este estilo:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_2mostrandoosite.png"></p>
+<p>É um código em uma linha só que nós não compreenderemos, mas o navegador entenderá o código. </p>
+<p>Você pode estar se perguntando se isso realmente traz alguma diferença, e a resposta é sim! Tínhamos um <em>jquery</em> de "259KB" e, agora, temos uma de versão comprimida de "86 KB". Repare:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_4diferenatamanhodosarquivos.png"></p>
+<p>Assim, apagamos as versões que não estavam minificadas e, portanto, 
+são maiores e conservamos as que acabamos de baixar que estão 
+minificadas e, assim, menores.</p>
+<p>Bom, e o que faremos agora?</p>
+<p>Podemos baixar os <em>frameworks</em> minificados e minificaremos os demais arquivos utilizando a ferramenta do <em>site</em>. Repare que o site ainda traz a opção de minificar em <em>HTML</em>. </p>
+<p>Se abrirmos o <em>html</em> temos a mesma coisa, espaços e comentários que também poderiam ser removidos. </p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_6mostrandoohtml.png"></p>
+<p>Então, vamos querer fazer uma minificação de <em>html</em>. Vamos fazer um teste! Nesse site temos que clicar na opção que está abaixo do campo, a <em>html Minifier</em> e configurar que tipo de remoções gostaríamos no <em>html</em>.
+ Vamos selecionar as opções de remover espaços, comentários, aspas dos 
+atributos quando desnecessárias e rodar com essas opções: </p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_7mostrandohtmlcomprimido.png"></p>
+<p>Também funciona! E economizamos de <em>37KB</em> para <em>31KB</em>, <em>6KB</em>.</p>
+<p>Mas, a ideia é que não precisemos ficar abrindo o site e sim que 
+automatizemos isso. Podemos instalar uma ferramenta em nossa máquina, 
+por exemplo, temos o <em>Uglify JS 2</em>, que é uma ferramenta do <em>Node</em>, e podemos instalá-la em nossa máquina. Instalaremos isso digitando o seguinte no terminal:</p>
+<pre class="prettyprint"><code><span class="pun">&gt;</span><span class="pln"> npm install uglifyjs </span><span class="pun">-</span><span class="pln">g</span></code></pre>
+<p>O <code>-g</code> é para indicar que é global. Após digitar isso ele baixará o <em>Uglify</em>
+ e teremos a permissão de usá-lo na linha de comando. Então, podemos 
+passar um nome de algum arquivo para ele e é feito o processo de 
+minificação. Por exemplo, vamos passar o arquivo <code>site/assets/js/busca.js</code>.  Ao digitar isso ele nos passa o arquivo já minificado. </p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_8cdigonoterminal.png"></p>
+<p>Ele cospe para nós, no terminal, o código sem espaços, sem 
+comentários e etc. A ideia é que possamos rodar isso para vários 
+arquivos.</p>
+<p>E como fazemos para guardar isso?</p>
+<p>Não colaremos esse código no nosso arquivo fonte, pois o código fonte
+ é útil para que nós. Os desenvolvedores utilizam o código fonte para 
+compreender o que está  acontecendo e é preciso entender o que está 
+escrito nele. </p>
+<p>O que fazemos então?</p>
+<p>Queremos minificar para otimizar o código, mas, não queremos estragar
+ nosso código fonte. Na prática o que fazemos é não minificar o código 
+fonte, criamos uma outra pasta, isto é, duplicamos o conteúdo da pasta 
+do código fonte e nessa cópia é que realizamos a minificação. Por 
+exemplo, temos uma pasta "site", copiaremos ela e renomearemos para 
+"dist", nome muito comum e que se aplica àquilo que será distribuído.</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_9pastadist.png"></p>
+<p>Nessa pasta "dist" nós colocaremos o código minificado, sem estragar o
+ arquivo fonte. Podemos fazer isso apenas copiando e colando o código da
+ Internet. Podemos fazer isso de outra maneira, usando no Terminal algo 
+que jogará o conteúdo para a pasta "dist".</p>
+<p>Digitaremos no terminal o seguinte:</p>
+<pre class="prettyprint"><code><span class="pln">uglifyjs site</span><span class="pun">/</span><span class="pln">assets</span><span class="pun">/</span><span class="pln">js</span><span class="pun">/</span><span class="pln">busca</span><span class="pun">.</span><span class="pln">js </span><span class="pun">-</span><span class="pln">o dist</span><span class="pun">/</span><span class="pln">assets</span><span class="pun">/</span><span class="pln">js</span><span class="pun">/</span><span class="pln">busca</span><span class="pun">.</span><span class="pln">js</span></code></pre>
+<p>Fazemos isso, digitando o <code>-o dist/assets/js/busca.js</code>, o <code>-o</code> significa <code>output</code> , ou saída. O que estamos falando é para o <em>uglify</em> pegar o arquivo <code>site/assets/js/busca.js</code>, minificar ele e jogar no <code>dist/assets/js/busca.js</code>. Teremos:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perform1_2_11mostrandoocssminificado.png"></p>
+<p>Vemos que ele está minificado em uma única linha. Deu certo!</p>
+<p>Precisaremos rodar isso para cada arquivo?</p>
+<p>Não, a ideia é que tentemos automatizar isso, mas não focaremos nesse
+ tema de automatização nesse capítulo, pois, temos cursos específicos 
+que abordam esse assunto. Assim, já temos pronto um <code>gulpfile.js</code>.  Apenas para compreender um pouco a cerca do <code>gulp</code> teremos o seguinte:</p>
+<pre class="prettyprint"><code><span class="pln">gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'minify-js'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> gulp</span><span class="pun">.</span><span class="pln">scr</span><span class="pun">(</span><span class="str">'site/**/*.js'</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">$</span><span class="pun">.</span><span class="pln">ugly</span><span class="pun">())</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'dist/))
+});</span></code></pre>
+<p>Compreendendo: Temos uma <code>task</code>, tarefa, que buscará minificar todos os <code>js</code>, os <em>javascript</em>, do site. Rodará o <code>uglify</code> e salvaremos o que foi minificado na pasta <code>dist</code>.</p>
+<p>A mesma coisa é feita com o <em>css</em> e o <em>html</em>. </p>
+<p>Não precisamos nos preocupar muito com esse código, pois ele não é o foco desse curso.  </p>
+<p>A primeira coisa que temos que fazer é instalar o <em>gulp</em> no nosso projeto e todos os <em>pluggings</em> que ele necessita. Para isso rodaremos na pasta do projeto os comandos <code>npm install</code> e o<code>npm install gulp-cli -g</code> para ter ele globalmente na máquina. Após a instalação podemos rodar o <code>gulp</code> na linha de comando e com as tarefas que já tinhamos preparado, por exemplo, veremos como funciona o <code>gulp</code> para minificar todos os <em>java script</em> da página. Para isso digitaremos <code>gulp minify-js</code>.</p>
+<p>Vamos conferir se ele rodou? Se formos na pasta <code>dist</code> veremos que todos os arquivos <code>js</code> da pasta <code>dist</code> estarão minificados. </p>
+<p>E podemos fazer o mesmo com o <code>css</code> digitando <code>gulp minify-css</code>e daremos um "Enter". E se formos na pasta "css" do "dist" teremos tudo minificado:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perform1_2_11mostrandoocssminificado.png"></p>
+<p>Podemos conferir o antes e o depois em relação ao tamanho dos arquivos.</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_12mostrandoadiferenadetamanhos.png"></p>
+<p>Repare na diferença dos tamanhos. Um arquivo que antes tinha "1 KB" 
+agora possui "725 KB" e assim por diante. Podemos comparar as pastas 
+inteiras, primeiramente a pasta tinha "51 KB" e agora possui "41 KB":</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perform1_2_13tamnhodapasta.png"></p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perform1_2_14tamnhodapasta2.png"></p>
+<p>Minificamos o <em>html</em> a mão, mas também poderíamos ter usado o <code>gulp</code>. Bastaria digitar <code>gulp minify-html</code> e ele também faria a minificação.</p>
+<p>E se quisermos rodar as três coisas? Se digitarmos <code>gulp minify</code> no terminal ele vai minificar as três coisas e vai escrever tudo na pasta "dist". </p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_2_15gulpminify.png"></p>
+<p>Nós utilizamos o <code>gulp</code> pois é uma das ferramentas mais famosas de <code>front-end</code>, mas existem diversas ferramentas que são úteis para minificação. Por exemplo, você pode trabalhar com <em>php</em> e querer utilizar outra coisa que não seja o <em>gulp</em>. Basta jogar no <em>google</em> e encontrar algum projeto de alguém que tenha feito um minificador para <em>php</em>.</p>
+<p>A ideia é que minificar é bacana e relativamente fácil, pois as ferramentas são configuradas uma única vez e pode ser feito com <em>php</em>, <em>node</em>, <em>java</em>, <em>gulp</em>
+ e etc. Com as ferramentas que melhor se adequam para você. Além disso, 
+fazer a minificação nos dá ganhos de cerca de 20 a 30% em termos de 
+tamanho.</p>
+<p>A otimização que fizemos  usando a minificação foi algo que mexeu 
+diretamente com os arquivos do projeto, entretanto, várias das 
+otimizações que veremos ao longo do curso realizam alterações na parte 
+do servidor.</p>
+<p>Até esse momento não estamos utilizando um servidos <em>http</em>, estamos acessando através de "file:". Observe:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_1mosrandoofilenonavegador.png"></p>
+<p>A primeira coisa que faremos antes de seguir adiante com a otimização é rodar um <em>http</em>. </p>
+<p>Podemos escolher entre os vários servidores que existem no mercado, 
+aqui, utilizaremos um que está bastante famoso no mercado, o <em>nginx</em>, além disso, esse servidor é fácil de ser utilizado. </p>
+<p>Podemos configurar esse servidor facilmente e usamos, para tanto, 
+arquivos de configuração. Primeiro, criaremos um arquivo de configuração
+ que salvaremos dentro da pasta do <em>nginx</em>. No nosso caso a pasta está em "/usr/local/etc/nginx/servers", mas essa localização pode mudar em outros computadores.</p>
+<p>Dentro dessa pasta criaremos um arquivo novo que denominaremos "curso alura" e nele estarão contidas as configurações <em>http</em> para que o possa se servir desse arquivo <em>nginx</em> do <em>Alura</em>.</p>
+<p>É bastante simples, vamos criar um <em>directive server</em>, colocaremos a porta que quisermos que seja escutada, no caso, escolheremos a <code>3030</code>, mas pode ser qualquer uma. Como nosso site é estático, usando a diretriz <code>root</code> diremos onde estão os arquivos do site, no caso, na pasta <code>/Users/alura/performance-web/site/</code>. Só isso é o suficiente para criar o servidor <em>nginx</em>:</p>
+<pre class="prettyprint"><code><span class="pln">server </span><span class="pun">{</span><span class="pln"> 
+    listen </span><span class="lit">3030</span><span class="pun">;</span><span class="pln">
+    root </span><span class="pun">/</span><span class="typ">Users</span><span class="pun">/</span><span class="pln">alura</span><span class="pun">/</span><span class="pln">performance</span><span class="pun">-</span><span class="pln">web</span><span class="pun">/</span><span class="pln">site</span><span class="pun">/</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>"Startamos" o <em>nginx</em> na linha de comando e apenas digitamos no terminal <code>nginx</code>.</p>
+<p>E agora, no navegador, podemos acessar digitando: "localhost:3030". Agora, temos o <em>nginx</em> rodando em local host com <em>http</em>.</p>
+<p>Por que fizemos isso?</p>
+<p>Porque rodando com <em>http</em> conseguimos fazer alterações do lado do servidor. Uma delas é habilitar a compressão das coisas.</p>
+<p>O que isso significa isso?</p>
+<p>Toda vez que acessamos um servidor remoto baixamos o <em>html</em>, o <em>css</em>, o <em>javascript</em>
+ e etc e que são arquivos de texto, minificados ou não. Um arquivo pode 
+ter o tamanho de "50 KB" e quando o transferimos pela rede ele é 
+transmitido do jeito que estiver, entretanto, podemos comprimir esses 
+"50 KB" para baixá-lo mais rapidamente.</p>
+<p>É a mesma coisa que fazemos quando queremos enviar um arquivo para 
+algum amigo e zipamos esse arquivo pois ele está muito grande. Assim, 
+enviamos um arquivo zipado que está comprimido, mas quando ele é aberto,
+ do outro lado, ele está do tamanho original.</p>
+<p>Conseguimos fazer esse mesmo mecanismo  na <em>web</em>, podemos 
+"zippar" e "deszippar" conteúdos através do navegador e do servidor. O 
+servidor "zipa" as coisas, manda para o navegador que "deszipa" elas. 
+Mas, por padrão não fazemos isso.</p>
+<p>Para fazermos isso vamos usar o <em>gzip</em>. Vamos habilitar isso através de uma diretiva muito simples, o comando <em>gzip on</em>. O <em>gzip</em>
+ serve para que o servidor "zipe" o conteúdo e mande para o "cliente" 
+que "deszipa"  e exibe no navegador. E tudo isso ocorre de maneira 
+bastante transparente. Teremos o seguinte:</p>
+<pre class="prettyprint"><code><span class="pln">server </span><span class="pun">{</span><span class="pln"> 
+    listen </span><span class="lit">3030</span><span class="pun">;</span><span class="pln">
+    root </span><span class="pun">/</span><span class="typ">Users</span><span class="pun">/</span><span class="pln">alura</span><span class="pun">/</span><span class="pln">performance</span><span class="pun">-</span><span class="pln">web</span><span class="pun">/</span><span class="pln">site</span><span class="pun">/</span><span class="pln">
+
+    gzip on</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora, precisamos recarregar o <em>nginx</em> no terminal, para isso digitaremos <code>ngix -s reload</code> e acessamos novamente o "localhost:3030".</p>
+<p>Como sabemos se funcionou?</p>
+<p>Começaremos a aprender como analisar as métricas de performance no site. E iniciaremos com o <em>dev tools</em>, para isso usamos o "F12" que abrirá as ferramentas de desenvolvimento. Estamos utilizando o <em>google chrom</em> e temos as diversas ferramentas que ele mostra, a que mais nos interessa nesse instante é a aba <em>network</em>.</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_2clicandononavegador.png"></p>
+<p>Nessa aba, se atualizamos o site, ele mostra tudo o que foi baixado no site, o <em>css</em>, o <em>html</em>, imagens e diversas outras coisas, além de sinalizar, também, o tamanho disso tudo. </p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_3mostrandooaabanetwork.png"></p>
+<p>Repare que o <em>localhost</em> é o "html" original e se clicarmos 
+nele podemos perceber que ele foi baixado e que possui duas versões, em 
+preto está escrito a versão que foi baixada na rede e em cinza mostra o 
+tamanho do conteúdo em si.</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_4mostrandoolocalhost.png"></p>
+<p>Se olharmos o arquivo <em>html</em> veremos que a pasta possui "38KB", mas, se olharmos no <code>dev tools</code> veremos que ele baixou apenas "6.9 KB", mas o ponto é que isso foi baixado por que ele foi <em>gzipado</em>. Para confirmar isso podemos olhar nos <em>headers</em>:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_5mostrandoosdetalhesdolocalhost.png"></p>
+<p>E se apagassemo o <code>gzip on</code> e no terminal e pedíssemos para recomeçar? Vamos apagar o <code>gzip on</code> e no terminal, para recomeçar, digitaremos <code>ngix -s reload</code>.</p>
+<p>Vamos dar um <em>reload</em> na página para observar a diferença:</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_6mostrandoolocalhost2.png"></p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_7mostrandodiferenanoheader.png"></p>
+<p>Temos "37 KB" e "37 KB" de tamanho e no <em>header</em> não tem mais <em>gzip</em>. Habilitar o <em>gzip</em>
+ no servidor é tão simples, quanto colocar uma única linha de 
+configuração e já ganhamos uma compreensão absurda. Pois, lembra-se, já 
+tínhamos "37 KB" e tinham ficado "6.9 KB".</p>
+<p>Por padrão o servidor <em>ngix</em> só comprime o <em>html</em>. Por exemplo, o <em>javascript</em> continua com "83 KB", ele não é comprimido. Mas, é muito fácil fazer ele comprimir outras coisas, nós digitamos abaixo de <code>gzip on</code>, <code>gzip_types</code>. </p>
+<p>O <code>gzip_types</code> recebe uma lista de ouros conteúdos que queremos que sejam "gzipados", por exemplo, diremos para ele que queremos que todos os <em>css</em>, <em>javascript</em>, imagens <em>svj</em> sejam "gzipados". E podemos colocar ainda diversas outras coisas. Digitaremos o seguinte:</p>
+<pre class="prettyprint"><code><span class="pln">gzip on</span><span class="pun">;</span><span class="pln">
+gzip_types text</span><span class="pun">/</span><span class="pln">css application</span><span class="pun">/</span><span class="pln">javascript image</span><span class="pun">/</span><span class="pln">svg</span><span class="pun">+</span><span class="pln">xml</span><span class="pun">;</span></code></pre>
+<p>Algo comum a todos esses tipos é que são arquivos com formato texto. O <em>gzip</em> lida muito bem com arquivos em formato texto, ele é muito bom para isso. Portanto, se pegamos um <em>jpeg</em>,
+ por exemplo, não há tanta diferença, por isso nem tentaremos comprimir 
+esses arquivos aqui, além disso, é um arquivo muito pesado e que pode 
+deixar, inclusive, o servidor mais sobrecarregado.</p>
+<p>Vamos dar um <em>reload</em> e observar o que aconteceu? Digitaremos no terminal, de novo, o <code>nginx -s reload</code>.</p>
+<p>Vamos observar o <em>jquery</em>, por exemplo, ele tem cerca de "83 KB", mas <em>gzipado</em> são cerca de "34 KB".</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_8mostrandoojquery.png"></p>
+<p>Podemos observar outro exemplo, o <em>css</em> que tem "1.1 KB" e <em>gzipado</em> possui "563KB":</p>
+<p><img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/perfor1_3_9mostrandoocss.png"></p>
+<p>As vezes ele aumenta um pouco pois são considerados, também, o tamanho dos <em>headers</em>. Podemos ignorar isso, em arquivos pequenos a diferença não é muito grande, mas em arquivos maiores ela é mais significante. </p>
+<p>Podemos observar qual o tamanho final para transportar toda a página que é "772 KB". Se desabilitarmos o <em>gzip</em>, apagando <code>gzip on</code> podemos observar a diferença. A página inteira ficará com "967 KB".</p>
+<p>Assim, foram economizadas centenas de <em>Kbytes</em>, simplesmente,  habilitando o <em>gzip</em>. </p>
+<p>E se você não utilizar o <code>ngix</code>?</p>
+<p>Cada servidor é de um jeito e cada um precisa de uma configuração, 
+mas geralmente esta configuração é bem simples. Se você utiliza algum <em>hosting</em> externo ou contratado é bastante grande a chance de que ele já esteja com <em>gzip</em> habilitado, é quase que padrão.  Se você utiliza algum servidor diferente, consulte a documentação. Por exemplo, no <em>Apache</em> não é a mesma configuração, mas é tão simples quanto.</p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-otimizacao-performance-web/exercicio-transcricao-das-aulas/16594/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16594/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button openMenu-button--inactive"></button>
+
+<aside class="task-menu" style="position: fixed;">
+	<section class="task-menu-header">
+		<button title="Abrir menu" aria-label="Abrir menu" type="button" class="openMenu-button task-menu-button openMenu-button--inactive"></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/otimizacao-performance-web" title="Ir para página do curso">
+				
+					
+					
+						<img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/otimizacao-performance-web.svg" alt="ícone Performance Web I: otimizando o front-end" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">Performance Web I: otimizando o front-end</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">18%</span>
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 18%, transparent 18%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+	<div class="task-menu-others task-menu-notes">
+		<button class="task-menu-others-link class-notes-button" title="Abrir caderno">Abrir caderno</button>
+	</div>
+
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>01</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Economizando bytes
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>15 de 15</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16591" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Porque otimizar o front-end?">
+							Porque otimizar o front-end?
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">04min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19445" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Múltipla escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Motivos pra otimização">
+							Motivos pra otimização
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16592" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Minificação">
+							Minificação
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">08min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19765" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Automação com Gulp">
+							Automação com Gulp
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16595" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto &amp; Ambiente">
+							Projeto &amp; Ambiente
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16596" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto: Minificação">
+							Projeto: Minificação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16597" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto: gulp copy">
+							Projeto: gulp copy
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16593" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Servidor &amp; GZIP">
+							Servidor &amp; GZIP
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">12min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19453" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Tamanho do download">
+							Tamanho do download
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/22450" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Servidor HTTP local">
+							Servidor HTTP local
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19447" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Análise com DevTools">
+							Análise com DevTools
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19449" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto: habilitar GZIP">
+							Projeto: habilitar GZIP
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19452" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Múltipla escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">13</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Revisão do conteúdo">
+							Revisão do conteúdo
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19545" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">14</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Para saber mais: Brotli">
+							Para saber mais: Brotli
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16594" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">15</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Transcrição das aulas">
+							Transcrição das aulas
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/otimizacao-performance-web/section/'+this.value+'/tasks';">
+			
+				<option value="4011" selected="selected">01. Economizando bytes</option>
+			
+				<option value="4012">02. Otimizações de Imagens</option>
+			
+				<option value="4013">03. O custo dos requests</option>
+			
+				<option value="4014">04. Concatenações &amp; Trade-offs</option>
+			
+				<option value="4015">05. Sprites</option>
+			
+				<option value="4016">06. Inline de recursos</option>
+			
+				<option value="4017">07. Paralelizando requests</option>
+			
+				<option value="4018">08. Cache HTTP</option>
+			
+				<option value="4019">09. Conclusão</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-otimizacao-performance-web/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/perinng" title="Ir para sua página de usuário">
+			<img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/c5e9ead7f80a8ed147549256414ffdf9.webp" alt="Gravatar de PAULO FELIPE PERIN DA CRUZ" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">PAULO FELIPE PERIN DA CRUZ</span>
+					<span class="task-menu-footer-detalhes-xp">
+						29.6k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" title="Ir para a página principal" width="19px" height="32px">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/jquery-2.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/buttonToggle.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sectionMenu.js" async=""></script>
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/marked.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/caret.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/keydownWatchers.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.js" async=""></script>
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/preventsMultipleInteractions.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/assessment.js" async=""></script>
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.js"></script><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aria.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ProjectSubmit.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/feedback.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ExtraContentProgressRequest.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/partitura.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioProgress.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.js"></script>
+
+		
+
+	
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/darkMode.js">
+	</script>
+
+	
+		
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '437065');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ClassNotes.js">
+	</script>
+<script>
+	new ClassNotes().refreshListeners();
+</script>
+
+
+
+
+
+
+<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/MarkdownProcessing.js"></script>
+<script>
+	new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+</script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%2015%20Transcri%C3%A7%C3%A3o%20das%20aulas%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>

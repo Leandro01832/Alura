@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html data-product="alura" class="" lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Page hiding snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script type="text/javascript" async="" src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gtm.js"></script><script>
+	(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-TN542JN':true});
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'Gulp: automação de tarefas front-end'
+        });
+	</script>
+
+	
+
+	<title>Gulp: Aula 1 - Atividade 3 O peso das imagens | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/css.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.css">
+
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/base.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/formattedText.css">
+	
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/container.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskProgress.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskMessageInfo.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/alternativeList.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedback.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdown.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/finishSection.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hqexplanation.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/openquestion.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/textcontent.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/singlechoice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/music.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/multiplechoice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videodialog.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/fillintheblank.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/speakingpractice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/pronunciationpractice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/repetition.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/genericVideo.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projectSubmit.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/extraContentTask.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskContent.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskButtons.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/notes.css">
+	
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dark-mode.css">
+	<link rel="stylesheet" href="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedbackAnswer.css">
+
+
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+	</style>
+
+
+	<script async="" src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hotjar-1638253.js"></script><script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sha256.js"></script><script async="" src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<section class="task menu--inactive" data-allow-answer="true" data-task-section-exam="false" data-task-type="hqexplanation" data-task-id="11921" data-author-id="437065" data-course-code="gulp" data-section-name="O peso das imagens" data-section-id="3355" data-section-number="1" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<section class="task-body">
+		
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					
+					
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>03</small>
+					<span class="task-body-header-title-text"> O peso das imagens</span>
+				</h1>
+				
+					<div class="task-body-header-actions">
+						<a href="https://cursos.alura.com.br/course/gulp/task/11921/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+					</div>
+				
+			</div>
+		</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de 
+anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para 
+você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/gulp/11921/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<div class="formattedText" data-external-links="">
+			<h2>O projeto está pronto. Está pronto mesmo?</h2>
+<p>Temos aqui um projeto front-end pronto para entrar em produção: </p>
+<p><img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projeto.png" alt="Estrutura do nosso projeto"></p>
+<p>Temos arquivos HTML, CSS, JS e imagens, nada fora do comum. Então, já podemos colocar o projeto no ar?  Vejamos.</p>
+<h2>O peso das imagens</h2>
+<p>Passeando pelo projeto, vemos que ele possui algumas imagens. Vamos 
+dar uma olhada nos tamanhos delas? Nem são tão grandes assim, mas se 
+você já visitou o  O <strong>HTTPArchive.org</strong> ele possui 
+gráficos com informações históricas coletadas mensalmente sobre os 17 
+mil sites mais acessados da Internet mundial. Um desses gráficos mostra 
+que mais de 60% do peso de uma página é por causa das imagens:</p>
+<p><img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/httparchive-img.png" alt="Participação de cada tipo de arquivo no tamanho total das páginas"></p>
+<p>Será que podemos tornar ainda menor nossas imagens otimizando-as?</p>
+<h2>Otimizações manuais</h2>
+<p>Qual ferramenta usar? Que tal o <a href="https://tinypng.com/" rel="nofollow noopener" target="_blank">TinyPNG</a>? É uma ferramenta online a gratuita que otimiza arquivos <code>png</code> e <code>jpg</code>:</p>
+<p><img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/tinypng.png" alt="Site do Tiny PNG, para compressão de imagens"></p>
+<p>Agora é só clicar em <strong>Drop your .png or .jpeg files here! </strong> que abrirá o diálogo de seleção de arquivos. Vamos escolher uma das imagens, por exemplo, <code>projeto\src\img\destaque-home.png</code>.
+ Assim que você escolher o arquivo, o upload iniciará. No final, será 
+exibido no seu navegador uma estatística para indicar quanto a nossa 
+imagem diminuiu, inclusive um link <code>download</code> para que possamos baixar o arquivo:</p>
+<p><img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/tinypng-upload.png" alt="Resultado da compressão do arquivo e link para download"></p>
+<p>O site otimiza nossa imagem oferecendo a opção de salvá-la em nossa 
+máquina, excelente. Vamos substituir o arquivo original pelo compactado e
+ concluímos nossa tarefa. Será?</p>
+<h2>O problema dos processos manuais</h2>
+<p>Apesar de funcional, temos um problema: imagine fazer isso com todas 
+as imagens do projeto? Temos mais de 40! Ainda há outro problema: cada 
+imagem otimizada deverá ser salva na pasta correta em nosso projeto. 
+Além disso, essa é apenas a tarefa de compactação de imagens, e se 
+tivéssemos outras?</p>
+<h2>Workflow e sua automação</h2>
+<p>Se você é um desenvolvedor front-end já deve ter se preocupado não apenas em otimizar imagens, mas em <em>minificar</em> e <em>concatenar</em> seus scripts, inclusive já deve ter experimentado o uso de algum pré-processador como <a href="http://lesscss.org/" rel="nofollow noopener" target="_blank">LESS</a>.</p>
+<p>A qualidade e quantidade das tarefas variam de acordo com as necessidades do seu projeto e essas tarefas acabam gerando um <strong>fluxo (workflow)</strong> identificável e que muitas vezes é documentado para ser usado por toda a equipe. </p>
+<p>O problema é que tudo que é feito pelo ser humano está sujeito a 
+erro. Por mais que tenhamos um manual nos dizendo o que fazer, nada nos 
+impede de pularmos um dos passos, o que pode afetar diretamente o 
+resultado final. </p>
+<p>Para solucionar problemas como esse, foram criadas no mercado ferramentas de construção (build) de projetos como <a href="http://ant.apache.org/" rel="nofollow noopener" target="_blank">Ant</a>, <a href="http://www.gradle.org/" rel="nofollow noopener" target="_blank">Gradle</a> e <a href="http://maven.apache.org/" rel="nofollow noopener" target="_blank">Maven</a>, mas há aquelas que são voltadas especialmente para programadores front-end como <strong><a href="http://gruntjs.com/" rel="nofollow noopener" target="_blank">Grunt</a></strong> e o <strong>Gulp</strong>. Neste treinamento aprenderemos o <strong>Gulp</strong>.</p>
+<h2>Bem-vindo ao Gulp</h2>
+<p>O <a href="http://gulpjs.com/" rel="nofollow noopener" target="_blank">Gulp</a> é uma <em>ferramenta de build</em>
+ totalmente feita em JavaScript tornando-a atrativa no mundo front-end, 
+especialmente para nosso projeto. Porém, para que funcione, precisamos 
+do <a href="http://nodejs.org/" rel="nofollow noopener" target="_blank">Node.js</a> instalado em nosso máquina.</p>
+<p><strong>IMPORTANTE: antes de continuar, faça o <a href="https://cursos.alura.com.br/course/gulp/section/1/task/3" rel="nofollow">primeiro exercício do capítulo</a>.
+ Nele você terá o link do projeto que usaremos neste treinamento, 
+inclusive você terá as instruções de como instalar o Node.js nas 
+plataformas Windows/Linux/Mac e sugestões de editores de texto. É 
+fundamental que você faça esse exercício antes de continuar.</strong></p>
+<p>Fez o primeiro exercício do capítulo baixando o projeto e instalando a
+ infraestrutura necessária do treinamento, certo? Muito bem, podemos 
+continuar.</p>
+<p>A primeira coisa é termos o Gulp instalado para que possamos criar 
+nossos scripts de automação. Sua instalação é feita através do terminal e
+ dentro da pasta <strong>projeto</strong> (não esqueça de mudar para essa pasta através do terminal).</p>
+<p>O Gulp é um módulo do Node.js e todos os seus módulos são instalados através do <a href="https://www.npmjs.com/" rel="nofollow noopener" target="_blank">npm</a>.
+ O npm acessa um repositório público na web com vários projetos que 
+podem ser consumidos pela nossa aplicação, inclusive o Gulp. O primeiro 
+passo antes de baixarmos o Gulp é criarmos o arquivo <strong>package.json</strong> que manterá uma lista de todos os módulos que formos instalando em nossa aplicação. </p>
+<p>O arquivo <code>package.json</code> possui uma estrutura peculiar e por esta razão há um assistente para sua criação. No terminal, dentro da pasta <strong>projeto</strong> vamos executar o comando:</p>
+<pre class="prettyprint"><code><span class="pln">npm init</span></code></pre>
+<p>Um assistente fará perguntas como o nome do projeto, sua versão entre
+ outras. Você pode responder atentamente cada uma das perguntas feitas, 
+porém  você pode dar ENTER para todas elas que um padrão será adotado. 
+Por exemplo, o nome do projeto será o nome da pasta na qual o comando 
+foi executado. O resultado final será o arquivo <code>package.json</code> com a seguinte estrutura:</p>
+<pre class="prettyprint"><code><span class="pun">{</span><span class="pln">
+  </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"projeto"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"version"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1.0.0"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"main"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"index.js"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"test"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  </span><span class="str">"author"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"license"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISC"</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Excelente, agora vamos baixar o Gulp através do comando <code>npm install</code>. Este comando recebe como parâmetro o nome do módulo, em nosso caso, <code>gulp</code> seguido de <code>@</code>
+ e sua versão. Caso tivéssemos omitido a versão, a mais atual seria 
+baixada. É importante usarmos a mesma versão deste treinamento para 
+evitarmos qualquer problema de compatibilidade. Por fim, ainda queremos 
+que o módulo fique listado em <code>package.json</code> através de <code>--save-dev</code>:</p>
+<pre class="prettyprint"><code><span class="pln">npm install gulp@3</span><span class="pun">.</span><span class="lit">9.0</span><span class="pln"> </span><span class="pun">--</span><span class="pln">save</span><span class="pun">-</span><span class="pln">dev</span></code></pre>
+<p>Quando o comando terminar, veremos que a pasta <strong>node_modules</strong> foi criada em nosso projeto. Dentro dela, existe a pasta <code>gulp</code>
+ que curiosamente tem o nome do mesmo módulo que instalamos, mas isso 
+não é por acaso. A pasta criada tem sempre o nome do módulo que 
+instalamos através do npm. E como ficou nosso <code>package.json</code>, vamos visualiza-lo?</p>
+<pre class="prettyprint"><code><span class="pun">{</span><span class="pln">
+  </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"projeto"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"version"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1.0.0"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"main"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"index.js"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"test"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  </span><span class="str">"author"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"license"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISC"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"devDependencies"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"gulp"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"^3.9.0"</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Confirmamos que o Gulp e sua versão estão presentes em nosso arquivo.</p>
+<p>Outra vantagem de salvarmos nossas dependências em <code>package.json</code> é que você pode compartilhar seu projeto sem a pasta <code>node_modules</code>, que deve ser baixada novamente através do comando <code>npm install</code>, sem qualquer parâmetro. O comando lerá do <code>package.json</code> todos os módulos de que sua aplicação depende baixando-os todos de uma só vez, levando em consideração cada versão utilizada.</p>
+<p>E agora? Já podemos executar o Gulp? Sim, mas como ele foi instalado dentro da pasta <code>node_modules</code> seremos obrigados a escrever toda vez <code>./node_modules/gulp/bin/gulp.js</code>. Podemos resolver alterando nosso arquivo <code>package.json</code>. </p>
+<p>Editando <code>package.json</code>, temos a seguinte chave:</p>
+<pre class="prettyprint"><code><span class="com">// código anterior omitido</span><span class="pln">
+  </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"test"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+</span><span class="com">// código posterior omitido</span></code></pre>
+<p>Vamos adicionar a chave <code>"gulp" : "gulp"</code>:</p>
+<pre class="prettyprint"><code><span class="com">// código anterior omitido</span><span class="pln">
+  </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"test"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"gulp"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"gulp"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+</span><span class="com">// código posterior omitido</span></code></pre>
+<p>Agora, se quisermos executar o Gulp através do terminal basta executarmos o comando:</p>
+<pre class="prettyprint"><code><span class="pln">npm run gulp</span></code></pre>
+<p>Excelente, nosso Gulp é executado, mas recebemos um erro:</p>
+<pre class="prettyprint"><code><span class="typ">No</span><span class="pln"> gulpfile found</span></code></pre>
+<p>Esse erro acontece, porque toda vez que o Gulp é executado ele procura o arquivo <strong>gulpfile.js</strong>. </p>
+<h2>O arquivo gulpfile.js e novas tarefas</h2>
+<p>Vamos criar o arquivo <code>gulpfile.js</code> dentro da pasta <strong>projeto</strong> e rodar o Gulp logo em seguida. Será que funciona?</p>
+<pre class="prettyprint"><code><span class="typ">Task</span><span class="pln"> </span><span class="str">'default'</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> your gulpfile
+</span><span class="typ">Please</span><span class="pln"> check the documentation </span><span class="kwd">for</span><span class="pln"> proper gulpfile formatting</span></code></pre>
+<p>Recebemos outra mensagem de erro, desta vez com o texto <strong>"Task 'default' is not in your gulpfile"</strong>. Faz todo sentido, <code>task</code> em português significa tarefa e não configuramos tarefa alguma em nosso arquivo <code>gulpfile.js</code>. Qual será nossa primeira tarefa? Ainda tem duvidas? A minificação automática de imagens!</p>
+<h2>Criando nossa primeira tarefa: minificação de imagens</h2>
+<p>O primeiro passo, antes de qualquer tarefa, é termos acesso ao Gulp que baixamos através do npm em nosso <code>gulfile.js</code>. No mundo Node.js quando queremos carregar um módulo em nosso script usamos a função <strong>require</strong> que recebe como parâmetro o nome do módulo. Então, vamos carregar o módulo do Gulp recebendo o retorno da função <code>require</code> em uma variável com mesmo nome, mas poderia ser qualquer outro:</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">);</span></code></pre>
+<p>É através da variável <code>gulp</code> que interagimos com um objeto
+ que representa o módulo Gulp. Este objeto possui uma série de métodos 
+auxiliares. Qual deles usaremos? Com certeza aquele que lê a pasta com 
+as imagens do nosso projeto, os arquivos origem da nossa tarefa. É por 
+isso que existe o método <strong>gulp.src</strong> que recebe como parâmetro o nome de um arquivo ou de uma pasta. Alterando nosso script:</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">);</span></code></pre>
+<p>O que esse comando faz é gerar um fluxo de leitura para a origem <code>projeto/src/img</code>
+ e todos os seus arquivos. Muito bem, estamos lendo dessa pasta, mas 
+qual será a pasta destino? A mesma, pois queremos ler as imagens, 
+otimizá-las e gravá-las em seu local de origem. Definimos o destino 
+através do método <strong>gulp.dest</strong> que cria um fluxo de escrita para a mesma pasta.</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">);</span><span class="pln">
+gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">);</span></code></pre>
+<p>Temos um fluxo de leitura e nosso fluxo de escrita: leremos as 
+imagens e gravaremos no mesmo lugar, mas espere um pouco: onde fica a 
+minificação das imagens? Teria que ser realizada entre o fluxo de 
+leitura e o de escrita, certo? Certíssimo, mas o Gulp não vem com esse 
+recurso por padrão. Para essa tarefa especial usaremos o plugin do Gulp 
+chamado <strong><a href="https://github.com/sindresorhus/gulp-imagemin" rel="nofollow noopener" target="_blank">gulp-imagemin</a></strong>.</p>
+<p>Todo plugin do Gulp é também um módulo do Node.js e deve ser instalado através do npm. Vamos lá? Em nosso terminal:</p>
+<pre class="prettyprint"><code><span class="pln">npm install gulp</span><span class="pun">-</span><span class="pln">imagemin@2</span><span class="pun">.</span><span class="lit">3.0</span><span class="pln"> </span><span class="pun">--</span><span class="pln">save</span><span class="pun">-</span><span class="pln">dev</span></code></pre>
+<p>Como já vimos, a instalação desse módulo criará a pasta <code>node_modules/gulp-imagemin</code> e como usamos <code>--save-dev</code> ele será adicionado como dependência em nosso arquivo <code>package.json</code>.</p>
+<p>Agora, em nosso <code>gulpfile.js</code>, vamos importar o módulo através da função <code>require</code> e para nossa comodidade armazená-lo em uma variável chamada <code>imagemin</code>:</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">imagemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-imagemin'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">);</span><span class="pln">
+gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">);</span></code></pre>
+<p>Tudo certo, agora precisamos saber como conectar o fluxo de leitura ao <code>imagemin</code>
+ que precisa saber quais arquivos considerar e este último ao fluxo de 
+escrita para gravar os arquivos resultantes da minificação. Na 
+construção civil, usamos tubos que podem ser conectados de diversas 
+formas para levar o fluxo de água de um local para o outro. Imagine o <code>imagemin</code> como o aquecedor entre as ligações, que opera sobre o fluxo. A água que passar por ele estará transformada, isto é, quente.</p>
+<p>A analogia com tubos não foi por acaso, porque é através do método <code>.pipe</code>
+ (tubo) que ligamos fluxos, seja ele de leitura ou escrita. Ele recebe 
+como parâmetro  outro fluxo que desejamos nos conectar. Vamos ligar o 
+fluxo de leitura ao <code>imagemin</code> e este último ao fluxo de escrita:</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">imagemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-imagemin'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">).</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">imagemin</span><span class="pun">()).</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">));</span></code></pre>
+<p>Excelente, agora temos a entrada (leitura) que será processado pelo <code>imagemin</code> e seu resultado associado a uma saída (escrita). Será que isso é suficiente? Vamos testar:</p>
+<pre class="prettyprint"><code><span class="pln">npm run gulp</span></code></pre>
+<p>Não foi dessa vez, recebemos a seguinte mensagem de erro no console:</p>
+<pre class="prettyprint"><code><span class="typ">Task</span><span class="pln"> </span><span class="str">'default'</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> your gulpfile</span></code></pre>
+<p>Configuramos uma tarefa, mas não é nossa tarefa padrão, muito menos 
+tem um nome. No Gulp, precisamos executar nosso código através de 
+tarefas e toda tarefa possui um nome. É por isso que usamos a função <code>gulp.task</code> para criar tarefas. Nossa tarefa se chamará <code>build-img</code>:</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">imagemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-imagemin'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'build-img'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+ </span><span class="com">// linha quebrada para ajudar na leitura</span><span class="pln">
+  gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">imagemin</span><span class="pun">())</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>O método <code>gulp.task</code> recebe como primeiro parâmetro o nome
+ da nossa tarefa e como segundo uma função que será executada assim que a
+ tarefa foi chamada através do Gulp no terminal. Para chamá-la, usamos <code>npm run gulp NomeDaTarefa</code>. Vamos testar:</p>
+<pre class="prettyprint"><code><span class="pln">npm run gulp build</span><span class="pun">-</span><span class="pln">img</span></code></pre>
+<p>Nenhum erro no terminal, mas também nenhuma imagem foi minificada. Como sabemos? Olhando o log:</p>
+<pre class="prettyprint"><code><span class="typ">Starting</span><span class="pln"> </span><span class="str">'build-img'</span><span class="pun">...</span><span class="pln">
+</span><span class="typ">Finished</span><span class="pln"> </span><span class="str">'build-img'</span><span class="pln"> after </span><span class="lit">11</span><span class="pln"> ms
+gulp</span><span class="pun">-</span><span class="pln">imagemin</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Minified</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> images  </span><span class="pun">&lt;---</span><span class="pln"> nenhuma img foi minificada</span></code></pre>
+<p>O problema é que nosso fluxo de leitura está considerando a pasta <code>src/img</code> e não seus arquivos. Podemos resolver isso usando o seguinte curinga <code>src/img/**/*</code>. Usamos o padrão <code>**</code> para indicarmos que queremos varrer todas as pastas dentro de <code>src/img</code> e usamos <code>*</code> para indicar que queremos todos os arquivos dessa pasta. Isso é o que chamamos de <strong>glob pattern</strong>. Vamos alterar nosso script e testar mais uma vez, mas antes vamos verificar o tamanho da imagem <code>src/img/destaque-home.png</code> que é 515KB. Agora que sabemos seu tamanho original, podemos comparar com o resultado final. Alterando:</p>
+<pre class="prettyprint"><code><span class="com">// gulpfile.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">imagemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-imagemin'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'build-img'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+  gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/img/**/*'</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">imagemin</span><span class="pun">())</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'src/img'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>Agora, executando nossa tarefa:</p>
+<pre class="prettyprint"><code><span class="pln">npm run gulp build</span><span class="pun">-</span><span class="pln">img</span></code></pre>
+<p>Recebemos a mensagem no console:</p>
+<pre class="prettyprint"><code><span class="typ">Starting</span><span class="pln"> </span><span class="str">'build-img'</span><span class="pun">...</span><span class="pln">
+</span><span class="typ">Finished</span><span class="pln"> </span><span class="str">'build-img'</span><span class="pln"> after </span><span class="lit">10</span><span class="pln"> ms
+gulp</span><span class="pun">-</span><span class="pln">imagemin</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Minified</span><span class="pln"> </span><span class="lit">32</span><span class="pln"> images </span><span class="pun">(</span><span class="pln">saved </span><span class="lit">181.09</span><span class="pln"> kB </span><span class="pun">-</span><span class="pln"> </span><span class="lit">8.7</span><span class="pun">%)</span></code></pre>
+<p>Percebam que temos ainda uma estatística indicando a quantidade em kb
+ e em percentual do total minificado de imagens. Chique, não? Com um 
+único comando no terminal podemos processar, 100, 200 ou mais imagens de
+ uma só vez! </p>
+<p>Olhando nosso arquivo <code>src/img/destaque-home.png</code> ele agora tem 451kb, antes era 515kb.</p>
+<p>Chegou a hora de praticar agora o que você aprendeu.</p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-gulp/exercicio-o-peso-das-imagens/11921/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/gulp/task/11921/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button  task-menu-button--inactive"></button>
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-1187.72px);">
+	<section class="task-menu-header">
+		<button title="Fechar menu" aria-label="Fechar menu" type="button" class="openMenu-button task-menu-button  task-menu-button--inactive"></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/gulp" title="Ir para página do curso">
+				
+					
+					
+						<img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gulp.svg" alt="ícone Gulp: automação de tarefas front-end" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">Gulp: automação de tarefas front-end</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">4%</span>
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 4%, transparent 4%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+	<div class="task-menu-others task-menu-notes">
+		<button class="task-menu-others-link class-notes-button" title="Abrir caderno">Abrir caderno</button>
+	</div>
+
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>01</strong>
+				<span>de 07</span></span>
+			<h3 class="task-menu-section-title-text">
+				O peso das imagens
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>3 de 13</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11920" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">25min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11922" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="(Obrigatório) Baixando o projeto e instalação do Node.js">
+							(Obrigatório) Baixando o projeto e instalação do Node.js
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11921" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O peso das imagens">
+							O peso das imagens
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11923" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O problema dos processos manuais">
+							O problema dos processos manuais
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11924" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Sobre o Gulp">
+							Sobre o Gulp
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11925" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="package.json">
+							package.json
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11926" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Adicionando dependências ">
+							Adicionando dependências 
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11927" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="gulpfile.js e importação de módulos">
+							gulpfile.js e importação de módulos
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11928" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Criando tarefas">
+							Criando tarefas
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11929" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Fluxo de leitura e fluxo de destino">
+							Fluxo de leitura e fluxo de destino
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11930" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Executando uma tarefa">
+							Executando uma tarefa
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/11931" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Colocando em prática">
+							Colocando em prática
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/39921" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">13</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Arquivos do projeto atual">
+							Arquivos do projeto atual
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/gulp/section/'+this.value+'/tasks';">
+			
+				<option value="3355" selected="selected">01. O peso das imagens</option>
+			
+				<option value="3371">02. Integridade do projeto</option>
+			
+				<option value="3379">03. Lidando com latência e banda</option>
+			
+				<option value="3418">04. Atacando repetições invisíveis</option>
+			
+				<option value="3419">05. Antecipando erros do futuro</option>
+			
+				<option value="3420">06. Combatendo o Prefix HELL!</option>
+			
+				<option value="3421">07. Usar pré-processador dá trabalho. Será?</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-gulp/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/perinng" title="Ir para sua página de usuário">
+			<img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/c5e9ead7f80a8ed147549256414ffdf9.webp" alt="Gravatar de PAULO FELIPE PERIN DA CRUZ" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">PAULO FELIPE PERIN DA CRUZ</span>
+					<span class="task-menu-footer-detalhes-xp">
+						30.1k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" title="Ir para a página principal" width="19px" height="32px">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/jquery-2.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/buttonToggle.js" async=""></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sectionMenu.js" async=""></script>
+
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/marked.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.js" async=""></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/caret.js" async=""></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/keydownWatchers.js" async=""></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.js" async=""></script>
+
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/preventsMultipleInteractions.js" async=""></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/assessment.js" async=""></script>
+
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aria.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ProjectSubmit.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/feedback.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ExtraContentProgressRequest.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/partitura.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioProgress.js"></script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.js"></script>
+
+		
+
+	
+
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/darkMode.js">
+	</script>
+
+	
+		
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '437065');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+	<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ClassNotes.js">
+	</script>
+<script>
+	new ClassNotes().refreshListeners();
+</script>
+
+
+
+
+
+
+<script src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/MarkdownProcessing.js"></script>
+<script>
+	new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+</script><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Gulp%20Aula%201%20-%20Atividade%203%20O%20peso%20das%20imagens%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>

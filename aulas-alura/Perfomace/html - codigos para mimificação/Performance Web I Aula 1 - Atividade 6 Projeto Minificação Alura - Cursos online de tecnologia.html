@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html data-product="alura" class="" lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Page hiding snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script type="text/javascript" async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gtm.js"></script><script>
+	(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-TN542JN':true});
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'Performance Web I: otimizando o front-end'
+        });
+	</script>
+
+	
+
+	<title>Performance Web I: Aula 1 - Atividade 6 Projeto: Minificação | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/css.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.css">
+
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/base.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/formattedText.css">
+	
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/container.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskProgress.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskMessageInfo.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/alternativeList.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedback.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdown.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/finishSection.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hqexplanation.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/openquestion.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/textcontent.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/singlechoice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/music.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/multiplechoice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videodialog.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/fillintheblank.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/speakingpractice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/pronunciationpractice.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/repetition.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/genericVideo.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projectSubmit.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/extraContentTask.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskContent.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskButtons.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/notes.css">
+	
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dark-mode.css">
+	<link rel="stylesheet" href="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedbackAnswer.css">
+
+
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+	</style>
+
+
+	<script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hotjar-1638253.js"></script><script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sha256.js"></script><script async="" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<section class="task" data-allow-answer="true" data-task-section-exam="false" data-task-type="textcontent" data-task-id="16596" data-author-id="437065" data-course-code="otimizacao-performance-web" data-section-name="Economizando bytes" data-section-id="4011" data-section-number="1" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<section class="task-body">
+		
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					
+					
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Sem Resposta do Aluno">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<small>06</small>
+					<span class="task-body-header-title-text"> Projeto: Minificação</span>
+				</h1>
+				
+					<div class="task-body-header-actions">
+						<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16596/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+					</div>
+				
+			</div>
+		</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de 
+anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para 
+você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+	
+	
+	
+		
+
+
+
+
+
+<section id="task-content" class="textContent">
+	
+	<div class="container">
+		
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/otimizacao-performance-web/16596/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<div class="formattedText" data-external-links="">
+			<p>Vamos minificar os arquivos do projeto, como vimos em aula.</p>
+<p>Você pode fazer manualmente usando serviços online <a href="http://refresh-sf.com/" rel="nofollow noopener" target="_blank">como esse</a> ou mesmo instalando ferramentas locais como <a href="https://github.com/mishoo/UglifyJS2" rel="nofollow noopener" target="_blank">uglifyjs</a>. Mas, na prática, o recomendado é <strong>automatizar o processo de minificação</strong>.
+ Não queremos estragar nossos arquivos originais então vamos gerar novos
+ arquivos minificados apenas antes de colocar em produção.</p>
+<p>Eu sugiro a automação com gulp, por isso temos já um <strong>gulpfile.js</strong> preparado no projeto.</p>
+<h2>Minificando com Gulp</h2>
+<p>Vá no terminal e entre na pasta do projeto: <code>cd performance-web</code></p>
+<p>Rode <code>gulp minify-js</code> para minificar todos os JavaScripts do projeto usando o uglifyjs de forma automática. O resultado é colocado em uma nova pasta <code>dist</code>.</p>
+<p>Rode também <code>gulp minify-css</code> e <code>minify-html</code>. Observe os resultados na pasta <code>dist</code>.</p>
+<p>(Você pode executar também apenas <code>gulp minify</code> que faz as 3 minificações de uma vez)</p>
+<hr>
+<p><em>Para saber mais sobre Gulp e como funciona o gulpfile, veja o <a href="https://www.alura.com.br/curso-online-gulp" rel="nofollow noopener" target="_blank">curso de Gulp do Alura</a>.</em></p>
+
+		</div>
+		<div class="task-actions">
+			
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-otimizacao-performance-web/exercicio-projeto-minificacao/16596/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+			
+				
+					<button class="task-actions-button task-actions-button-answer task-body-actions-button task-actions-button-showOpinion">Ver opinião do instrutor</button>
+				
+				
+			
+		</div>
+		
+			
+
+
+
+
+
+<section id="task-feedback" class="task-feedback" aria-hidden="true">
+	<section class="task-feedback-banner">
+		<div class="container">
+			<h3 class="task-feedback-banner-title">
+				Opinião do instrutor
+			</h3>
+		</div>
+		
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/otimizacao-performance-web/16596/opinion">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+	</section>
+	
+				<div class="formattedText" data-external-links="">
+					<p>A ideia é economizar bytes removendo coisas desnecessárias para execução dos códigos.</p>
+<p>Conseguiu rodar o gulp sem problemas? Observe a nova pasta <code>dist</code> e os arquivos JS, CSS e HTML minificados.</p>
+<p>Se tiver problemas pra rodar, abra um tópico no fórum!</p>
+
+				</div>
+			
+</section>
+		
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-otimizacao-performance-web/exercicio-projeto-minificacao/16596/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16596/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+
+<aside class="task-menu" style="position: absolute;">
+	<section class="task-menu-header">
+		<button title="Fechar menu" aria-label="Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/otimizacao-performance-web" title="Ir para página do curso">
+				
+					
+					
+						<img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/otimizacao-performance-web.svg" alt="ícone Performance Web I: otimizando o front-end" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">Performance Web I: otimizando o front-end</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">12%</span>
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 12%, transparent 12%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+	<div class="task-menu-others task-menu-notes">
+		<button class="task-menu-others-link class-notes-button" title="Abrir caderno">Abrir caderno</button>
+	</div>
+
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>01</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Economizando bytes
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>6 de 15</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16591" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Porque otimizar o front-end?">
+							Porque otimizar o front-end?
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">04min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19445" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Múltipla escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Motivos pra otimização">
+							Motivos pra otimização
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16592" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Minificação">
+							Minificação
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">08min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19765" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Automação com Gulp">
+							Automação com Gulp
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16595" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto &amp; Ambiente">
+							Projeto &amp; Ambiente
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16596" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto: Minificação">
+							Projeto: Minificação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16597" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Sem Resposta do Aluno concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto: gulp copy">
+							Projeto: gulp copy
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16593" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Servidor &amp; GZIP">
+							Servidor &amp; GZIP
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">12min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19453" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Tamanho do download">
+							Tamanho do download
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/22450" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Servidor HTTP local">
+							Servidor HTTP local
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19447" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Análise com DevTools">
+							Análise com DevTools
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19449" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto: habilitar GZIP">
+							Projeto: habilitar GZIP
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19452" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Múltipla escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">13</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Revisão do conteúdo">
+							Revisão do conteúdo
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/19545" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Explicação não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">14</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Para saber mais: Brotli">
+							Para saber mais: Brotli
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/otimizacao-performance-web/task/16594" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Explicação não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">15</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Transcrição das aulas">
+							Transcrição das aulas
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/otimizacao-performance-web/section/'+this.value+'/tasks';">
+			
+				<option value="4011" selected="selected">01. Economizando bytes</option>
+			
+				<option value="4012">02. Otimizações de Imagens</option>
+			
+				<option value="4013">03. O custo dos requests</option>
+			
+				<option value="4014">04. Concatenações &amp; Trade-offs</option>
+			
+				<option value="4015">05. Sprites</option>
+			
+				<option value="4016">06. Inline de recursos</option>
+			
+				<option value="4017">07. Paralelizando requests</option>
+			
+				<option value="4018">08. Cache HTTP</option>
+			
+				<option value="4019">09. Conclusão</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-otimizacao-performance-web/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/perinng" title="Ir para sua página de usuário">
+			<img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/c5e9ead7f80a8ed147549256414ffdf9.webp" alt="Gravatar de PAULO FELIPE PERIN DA CRUZ" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">PAULO FELIPE PERIN DA CRUZ</span>
+					<span class="task-menu-footer-detalhes-xp">
+						29.4k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" title="Ir para a página principal" width="19px" height="32px">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/jquery-2.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/buttonToggle.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sectionMenu.js" async=""></script>
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/marked.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/caret.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/keydownWatchers.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.js" async=""></script>
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/preventsMultipleInteractions.js" async=""></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/assessment.js" async=""></script>
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aria.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ProjectSubmit.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/feedback.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ExtraContentProgressRequest.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/partitura.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioProgress.js"></script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.js"></script>
+
+		
+
+	
+
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/darkMode.js">
+	</script>
+
+	
+		
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '437065');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+	<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ClassNotes.js">
+	</script>
+<script>
+	new ClassNotes().refreshListeners();
+</script>
+
+
+
+
+
+
+<script src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/MarkdownProcessing.js"></script>
+<script>
+	new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+</script><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Performance%20Web%20I%20Aula%201%20-%20Atividade%206%20Projeto%20Minifica%C3%A7%C3%A3o%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>

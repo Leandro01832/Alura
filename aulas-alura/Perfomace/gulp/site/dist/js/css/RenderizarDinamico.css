@@ -1,0 +1,61 @@
+
+#CriaTexto {
+    font-size: 22px;
+}
+
+#LinhaImaginaria {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+    top: 50px;
+}
+
+#Botoes {
+    position: relative;
+    top: 30px;
+    border: ridge;
+    border-width: 5px;
+    border-color: bisque;
+    height: auto;
+}
+
+#Chat {
+    border: ridge;
+    border-width: 20px;
+    border-color: bisque;
+    height: auto;
+}
+
+.content {
+    border: ridge;
+    border-width: 15px;
+    border-color: bisque;
+    height: auto;
+}
+
+#conteudomodal {
+    height: auto;
+}
+
+#conteudoImagem {
+    height: auto;
+}
+
+#conteudoMusica {
+    height: auto;
+}
+
+#conteudoVideo {
+    height: auto;
+}
+
+#Chat {
+    height: 550px;
+    overflow: auto;
+}
+
+.content {
+    height: 525px;
+    overflow: auto;
+}

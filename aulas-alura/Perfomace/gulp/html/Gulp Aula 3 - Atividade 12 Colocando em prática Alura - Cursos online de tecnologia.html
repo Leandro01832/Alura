@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html data-product="alura" class="" lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Page hiding snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script type="text/javascript" async="" src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gtm.js"></script><script>
+	(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-TN542JN':true});
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'Gulp: automação de tarefas front-end'
+        });
+	</script>
+
+	
+
+	<title>Gulp: Aula 3 - Atividade 12 Colocando em prática | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/css.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.css">
+
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/base.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/formattedText.css">
+	
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/container.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskProgress.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskMessageInfo.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/alternativeList.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedback.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdown.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/finishSection.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hqexplanation.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/openquestion.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/textcontent.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/singlechoice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/music.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/multiplechoice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videodialog.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/fillintheblank.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/speakingpractice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/pronunciationpractice.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/repetition.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/genericVideo.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projectSubmit.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/extraContentTask.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskContent.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskButtons.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/notes.css">
+	
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dark-mode.css">
+	<link rel="stylesheet" href="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedbackAnswer.css">
+
+
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+	</style>
+
+
+	<script async="" src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hotjar-1638253.js"></script><script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sha256.js"></script><script async="" src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<section class="task menu--inactive" data-allow-answer="true" data-task-section-exam="false" data-task-type="openquestion" data-task-id="12073" data-author-id="437065" data-course-code="gulp" data-section-name="Lidando com latência e banda" data-section-id="3379" data-section-number="3" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<section class="task-body">
+		
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					
+					
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Exercício Aberto">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<small>12</small>
+					<span class="task-body-header-title-text"> Colocando em prática</span>
+				</h1>
+				
+					<div class="task-body-header-actions">
+						<a href="https://cursos.alura.com.br/course/gulp/task/12073/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+					</div>
+				
+			</div>
+		</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de 
+anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para 
+você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="true">
+				
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+<section id="task-content" class="openQuestion">
+	<div class="container">
+		
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/gulp/12073/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<div class="formattedText" data-external-links="">
+			<p>Temos o seguinte script do capítulo anterior completo. Com base no
+ que aprendeu neste capítulo, instale todas as dependências necessárias e
+ altere o script para que concatene e minifique arquivos JS e CSS. Use o
+ módulo <strong>usemin</strong> para ajudá-lo nessa tarefa.</p>
+<pre class="prettyprint"><code><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">imagemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-imagemin'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">clean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-clean'</span><span class="pun">);</span><span class="pln">
+
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'copy'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'clean'</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/**/*'</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'dist'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'clean'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'dist'</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">clean</span><span class="pun">());</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'build-img'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'copy'</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+  gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'dist/img/**/*'</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">imagemin</span><span class="pun">())</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'dist/img'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+
+		</div>
+		<h3 class="openQuestion-answer-title" style="display: none;">Responda</h3>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="markdownEditor" id="markdownEditor-12073" style="display: none;">
+	
+	
+
+	<div class="markdownEditor-buttons ">
+		<button class="markdownEditor-button markdownEditor-button-code " data-insert-code="insira seu código aqui" type="button">
+			Inserir código
+		</button>
+		<div class="markdownEditor-buttons-options">
+					<button class="markdownEditor-button markdownEditor-button-preview" type="button" data-js-toggle="#markdownEditor-12073">
+						Expandir
+					</button>
+
+			<button aria-controls="markdownEditor-help" aria-expanded="false" class="markdownEditor-button markdownEditor-button-format" type="button" data-js-toggle="#markdownEditor-12073 .markdownEditor-help" aria-label="Abrir instruções de formatação do texto">
+				Formatação
+			</button>
+		</div>
+	</div>
+	
+	
+	<div class="markdownEditor-area">
+		
+			<aside class="markdownEditor-help formattedText" aria-hidden="true" id="markdownEditor-help" tabindex="0">
+				
+					<h2>How to format code</h2>
+					<ul>
+						<li>É possível criar blocos de código adicionando três backticks (```) antes e depois do código</li>
+						<li>Para escapar a formatação, utilize crases `dessa _forma_`</li>
+						<li>Serão exibidas apenas tags HTML e XML que estiverem entre `<crases>`</crases></li></ul>
+				
+				<h2>Formatação básica</h2>
+				<ul>
+					<li>**<strong>negrito</strong>**</li>
+					<li>*<em>itálico</em>*</li>
+					<li>~~<del>riscado (Strikethrough)</del>~~ </li>
+				</ul>
+
+				<h2>Como formatar links</h2>
+				<ul>
+					<li>&lt;http://google.com&gt;</li>
+					<li>[Google](http://google.com)</li></ul>
+			</aside>
+		
+
+
+		<textarea aria-live="polite" aria-atomic="true" class="markdownEditor-source markdownEditor-textArea " placeholder="" name="fieldName" maxlength="5000" id="markdownEditor-12073-ta"></textarea>
+
+		
+			
+			
+				<output class="markdownEditor-preview formattedText markdownEditor-textArea " for="markdownEditor-12073-ta"></output>
+			
+		
+		
+			<input class="markdownEditor-preview-output" type="hidden" name="answeredTextHighlight" value="">
+		
+	</div>
+</div>
+		<div class="task-actions screenReader-only">
+			
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-gulp/exercicio-colocando-em-pratica/12073/novo" class=" task-actions-button task-actions-button-forum" target="_blank" style="display: none;">Discutir no Forum</a>
+
+
+
+			<button class="task-body-actions-button task-actions-button task-actions-button-answer" data-submittable="true" aria-expanded="true">Responda</button>
+		</div>
+		
+			
+
+
+
+
+
+<section id="task-feedback" class="task-feedback task-feedback--visible" aria-hidden="false">
+	<section class="task-feedback-banner">
+		<div class="container">
+			<h3 class="task-feedback-banner-title">
+				Opinião do instrutor
+			</h3>
+		</div>
+		
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/gulp/12073/opinion">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+	</section>
+	
+				<div class="formattedText" data-external-links="">
+					<p>Um exemplo válido do <code>gulpfile.js</code> é o que vimos no treinamento:</p>
+<pre class="prettyprint"><code><span class="kwd">var</span><span class="pln"> gulp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">imagemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-imagemin'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">clean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-clean'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">concat </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-concat'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">htmlReplace </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-html-replace'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">uglify </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-uglify'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">usemin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-usemin'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">,</span><span class="pln">cssmin </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'gulp-cssmin'</span><span class="pun">);</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'default'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'copy'</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    gulp</span><span class="pun">.</span><span class="pln">start</span><span class="pun">(</span><span class="str">'build-img'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'usemin'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'copy'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'clean'</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'src/**/*'</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'dist'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'clean'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'dist'</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">clean</span><span class="pun">());</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'build-img'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+  </span><span class="kwd">return</span><span class="pln"> gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'dist/img/**/*'</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">imagemin</span><span class="pun">())</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'dist/img'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+gulp</span><span class="pun">.</span><span class="pln">task</span><span class="pun">(</span><span class="str">'usemin'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">return</span><span class="pln"> gulp</span><span class="pun">.</span><span class="pln">src</span><span class="pun">(</span><span class="str">'dist/**/*.html'</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">usemin</span><span class="pun">({</span><span class="pln">
+      js</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">uglify</span><span class="pun">],</span><span class="pln">
+      css</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">cssmin</span><span class="pun">]</span><span class="pln">
+    </span><span class="pun">}))</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">pipe</span><span class="pun">(</span><span class="pln">gulp</span><span class="pun">.</span><span class="pln">dest</span><span class="pun">(</span><span class="str">'dist'</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>E claro, não podemos esquecer dos comentários condicionais. </p>
+
+				</div>
+			
+</section>
+		
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions" style="display: block;">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-gulp/exercicio-colocando-em-pratica/12073/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/gulp/task/12073/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button openMenu-button--inactive task-menu-button--inactive"></button>
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-31.6px);">
+	<section class="task-menu-header">
+		<button title="Abrir menu" aria-label="Abrir menu" type="button" class="openMenu-button task-menu-button openMenu-button--inactive task-menu-button--inactive"></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/gulp" title="Ir para página do curso">
+				
+					
+					
+						<img src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gulp.svg" alt="ícone Gulp: automação de tarefas front-end" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">Gulp: automação de tarefas front-end</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">51%</span>
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 51%, transparent 51%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+	<div class="task-menu-others task-menu-notes">
+		<button class="task-menu-others-link class-notes-button" title="Abrir caderno">Abrir caderno</button>
+	</div>
+
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>03</strong>
+				<span>de 07</span></span>
+			<h3 class="task-menu-section-title-text">
+				Lidando com latência e banda
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>12 de 13</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12062" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">04min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12063" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">04min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12064" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 3">
+							Vídeo 3
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">21min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12065" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 4">
+							Vídeo 4
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12066" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 5">
+							Vídeo 5
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12067" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Lidando com latência e banda">
+							Lidando com latência e banda
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12068" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Exercício Aberto concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O problema de múltiplas requisições">
+							O problema de múltiplas requisições
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12069" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="A técnica merge">
+							A técnica merge
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12070" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Concatenando arquivos em um só">
+							Concatenando arquivos em um só
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12071" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Facilitando nossa vida">
+							Facilitando nossa vida
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12072" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Módulo htmlReplace e os comentários condicionais">
+							Módulo htmlReplace e os comentários condicionais
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/gulp/task/12073" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Colocando em prática">
+							Colocando em prática
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/gulp/task/39923" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">13</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Arquivos do projeto atual">
+							Arquivos do projeto atual
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/gulp/section/'+this.value+'/tasks';">
+			
+				<option value="3355">01. O peso das imagens</option>
+			
+				<option value="3371">02. Integridade do projeto</option>
+			
+				<option value="3379" selected="selected">03. Lidando com latência e banda</option>
+			
+				<option value="3418">04. Atacando repetições invisíveis</option>
+			
+				<option value="3419">05. Antecipando erros do futuro</option>
+			
+				<option value="3420">06. Combatendo o Prefix HELL!</option>
+			
+				<option value="3421">07. Usar pré-processador dá trabalho. Será?</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-gulp/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/perinng" title="Ir para sua página de usuário">
+			<img src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/c5e9ead7f80a8ed147549256414ffdf9.webp" alt="Gravatar de PAULO FELIPE PERIN DA CRUZ" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">PAULO FELIPE PERIN DA CRUZ</span>
+					<span class="task-menu-footer-detalhes-xp">
+						32.5k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" title="Ir para a página principal" width="19px" height="32px">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/jquery-2.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/buttonToggle.js" async=""></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sectionMenu.js" async=""></script>
+
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/marked.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.js" async=""></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/caret.js" async=""></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/keydownWatchers.js" async=""></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.js" async=""></script>
+
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/preventsMultipleInteractions.js" async=""></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/assessment.js" async=""></script>
+
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aria.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ProjectSubmit.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/feedback.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ExtraContentProgressRequest.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/partitura.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioProgress.js"></script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.js"></script>
+
+		
+
+	
+
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/darkMode.js">
+	</script>
+
+	
+		
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '437065');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+	<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ClassNotes.js">
+	</script>
+<script>
+	new ClassNotes().refreshListeners();
+</script>
+
+
+
+
+
+
+<script src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/MarkdownProcessing.js"></script>
+<script>
+	new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+</script><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Gulp%20Aula%203%20-%20Atividade%2012%20Colocando%20em%20pr%C3%A1tica%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>
