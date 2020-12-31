@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html data-product="alura" class="" lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .video-player-dimensions {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .video-player-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Page hiding snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script type="text/javascript" async="" src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/analytics.js"></script><script async="" src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/gtm.js"></script><script>
+	(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+		{'GTM-TN542JN':true});
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'TypeScript parte 1: Evoluindo seu Javascript'
+        });
+	</script>
+
+	
+
+	<title>TypeScript parte 1: Aula 1 - Atividade 7 Instalação e configuração do compilador | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/css.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.css">
+
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/base.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/formattedText.css">
+	
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/container.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskProgress.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskMessageInfo.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/alternativeList.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedback.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdown.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/finishSection.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hqexplanation.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/openquestion.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/textcontent.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/singlechoice.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/music.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/multiplechoice.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videodialog.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/fillintheblank.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/speakingpractice.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/pronunciationpractice.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/repetition.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/genericVideo.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/projectSubmit.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/extraContentTask.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskContent.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskButtons.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/notes.css">
+	
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dark-mode.css">
+	<link rel="stylesheet" href="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/taskFeedbackAnswer.css">
+
+
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+	</style>
+
+
+	<script async="" src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/hotjar-1638253.js"></script><script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sha256.js"></script><script async="" src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<section class="task menu--inactive" data-allow-answer="true" data-task-section-exam="false" data-task-type="video" data-task-id="26749" data-author-id="437065" data-course-code="typescript-parte1" data-section-name="Bem começado, metade feito" data-section-id="5046" data-section-number="1" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<section class="task-body">
+		
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					
+					
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Vídeo">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<small>07</small>
+					<span class="task-body-header-title-text"> Instalação e configuração do compilador</span>
+				</h1>
+				
+					<div class="task-body-header-actions">
+						<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26749/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+					</div>
+				
+			</div>
+		</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de 
+anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para 
+você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+	
+	
+	
+	
+		
+
+
+
+
+
+
+
+
+    
+    
+        <section class="video" id="task-content">
+            <div class="container theater-mode">
+                
+
+
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-player">
+							<a class="video-problems" href="https://suporte.alura.com.br/article/117-videos-bloqueio-lentos" target="_blank">
+								Problemas com o vídeo?
+								<span hidden="">indisponível</span>
+							</a>
+						</li>
+					
+					
+						
+							
+							
+								<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/typescript-parte1/26749/question">Sugerir alteração</a></li>
+							
+						
+					
+				
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+                
+
+
+
+
+
+
+
+<section id="video" class="video-container">
+    <div id="video-container-data" data-section-id="5046" data-course="typescript-parte1" data-playback-rate="1.0" data-task-id="26749" data-quality="hd" data-course-id="614" data-gnarus-name="alura" data-error-message="&lt;p&gt;Não foi possível reproduzir o vídeo. Veja problemas e soluções comuns &lt;a href=https://suporte.alura.com.br/article/117-os-videos-estao-carregando-muito-lentamente-o-que-devo-fazer&gt;em  nosso FAQ&lt;/a&gt;&lt;/p&gt;" data-error-label="Não foi possível reproduzir o video, visite https://suporte.alura.com.br/article/117-os-videos-estao-carregando-muito-lentamente-o-que-devo-fazer para ver problemas e soluções comuns.">
+
+        
+    
+          <video-js id="video-player" class="video-js vjs-big-play-centered vjs-default-skin video-player-frame video-player vjs-fluid video-player-dimensions vjs-controls-enabled vjs-workinghover vjs-v7 vjs-has-started vjs-playing vjs-user-inactive" preload="auto" tabindex="-1" role="region" aria-label="Video Player" lang="pt-br"><video tabindex="-1" preload="auto" class="vjs-tech" id="video-player_html5_api" src="blob:https://cursos.alura.com.br/bb77ee42-3373-494a-b892-4d68a7c39466"></video>
+           <div class="vjs-poster vjs-hidden" aria-disabled="false"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="66.54" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-valuetext="6:12 of 9:19"><div class="vjs-load-progress" style="width: 77.8%;"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">77.80%</span></span><div data-start="339.066666" data-end="435.008" style="left: 77.94%; width: 22.06%;"></div></div><div class="vjs-mouse-display" style="left: 283.823px;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: -22.6083px;">4:56</div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 66.54%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: -12.8px;">6:12</div></div></div></div><button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Pause" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Pause</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Current Time </span><span class="vjs-current-time-display" aria-live="off" role="presentation">6:11</span></div><div class="vjs-time-control vjs-time-divider" aria-hidden="true"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Duration </span><span class="vjs-duration-display" aria-live="off" role="presentation">9:19</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Playback Rate</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">3x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">2.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-quality-selector vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" aria-haspopup="true" aria-expanded="false" title="Open quality selector menu"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Open quality selector menu</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">hd</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">sd</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button vjs-disabled" type="button" title="Picture-in-Picture" aria-disabled="true" disabled="disabled"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " aria-describedby="video-player_component_398_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="video-player_component_398_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" aria-describedby="video-player_component_403_description" aria-hidden="true" aria-label="Caption Settings Dialog" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="video-player_component_403_description">Beginning of dialog window. Escape will cancel and close the window.</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg-color vjs-track-setting"><legend id="captions-text-legend-video-player_component_403">Text</legend><label id="captions-foreground-color-video-player_component_403" class="vjs-label">Color</label><select aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403"><option id="captions-foreground-color-video-player_component_403-White" value="#FFF" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-White" selected="selected">White</option><option id="captions-foreground-color-video-player_component_403-Black" value="#000" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Black">Black</option><option id="captions-foreground-color-video-player_component_403-Red" value="#F00" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Red">Red</option><option id="captions-foreground-color-video-player_component_403-Green" value="#0F0" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Green">Green</option><option id="captions-foreground-color-video-player_component_403-Blue" value="#00F" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Blue">Blue</option><option id="captions-foreground-color-video-player_component_403-Yellow" value="#FF0" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Yellow">Yellow</option><option id="captions-foreground-color-video-player_component_403-Magenta" value="#F0F" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Magenta">Magenta</option><option id="captions-foreground-color-video-player_component_403-Cyan" value="#0FF" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-color-video-player_component_403 captions-foreground-color-video-player_component_403-Cyan">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-video-player_component_403" class="vjs-label">Transparency</label><select aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-opacity-video-player_component_403"><option id="captions-foreground-opacity-video-player_component_403-Opaque" value="1" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-opacity-video-player_component_403 captions-foreground-opacity-video-player_component_403-Opaque" selected="selected">Opaque</option><option id="captions-foreground-opacity-video-player_component_403-SemiTransparent" value="0.5" aria-labelledby="captions-text-legend-video-player_component_403 captions-foreground-opacity-video-player_component_403 captions-foreground-opacity-video-player_component_403-SemiTransparent">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-track-setting"><legend id="captions-background-video-player_component_403">Background</legend><label id="captions-background-color-video-player_component_403" class="vjs-label">Color</label><select aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403"><option id="captions-background-color-video-player_component_403-Black" value="#000" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Black" selected="selected">Black</option><option id="captions-background-color-video-player_component_403-White" value="#FFF" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-White">White</option><option id="captions-background-color-video-player_component_403-Red" value="#F00" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Red">Red</option><option id="captions-background-color-video-player_component_403-Green" value="#0F0" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Green">Green</option><option id="captions-background-color-video-player_component_403-Blue" value="#00F" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Blue">Blue</option><option id="captions-background-color-video-player_component_403-Yellow" value="#FF0" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Yellow">Yellow</option><option id="captions-background-color-video-player_component_403-Magenta" value="#F0F" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Magenta">Magenta</option><option id="captions-background-color-video-player_component_403-Cyan" value="#0FF" aria-labelledby="captions-background-video-player_component_403 captions-background-color-video-player_component_403 captions-background-color-video-player_component_403-Cyan">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-video-player_component_403" class="vjs-label">Transparency</label><select aria-labelledby="captions-background-video-player_component_403 captions-background-opacity-video-player_component_403"><option id="captions-background-opacity-video-player_component_403-Opaque" value="1" aria-labelledby="captions-background-video-player_component_403 captions-background-opacity-video-player_component_403 captions-background-opacity-video-player_component_403-Opaque" selected="selected">Opaque</option><option id="captions-background-opacity-video-player_component_403-SemiTransparent" value="0.5" aria-labelledby="captions-background-video-player_component_403 captions-background-opacity-video-player_component_403 captions-background-opacity-video-player_component_403-SemiTransparent">Semi-Transparent</option><option id="captions-background-opacity-video-player_component_403-Transparent" value="0" aria-labelledby="captions-background-video-player_component_403 captions-background-opacity-video-player_component_403 captions-background-opacity-video-player_component_403-Transparent">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-track-setting"><legend id="captions-window-video-player_component_403">Window</legend><label id="captions-window-color-video-player_component_403" class="vjs-label">Color</label><select aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403"><option id="captions-window-color-video-player_component_403-Black" value="#000" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Black" selected="selected">Black</option><option id="captions-window-color-video-player_component_403-White" value="#FFF" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-White">White</option><option id="captions-window-color-video-player_component_403-Red" value="#F00" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Red">Red</option><option id="captions-window-color-video-player_component_403-Green" value="#0F0" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Green">Green</option><option id="captions-window-color-video-player_component_403-Blue" value="#00F" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Blue">Blue</option><option id="captions-window-color-video-player_component_403-Yellow" value="#FF0" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Yellow">Yellow</option><option id="captions-window-color-video-player_component_403-Magenta" value="#F0F" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Magenta">Magenta</option><option id="captions-window-color-video-player_component_403-Cyan" value="#0FF" aria-labelledby="captions-window-video-player_component_403 captions-window-color-video-player_component_403 captions-window-color-video-player_component_403-Cyan">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-video-player_component_403" class="vjs-label">Transparency</label><select aria-labelledby="captions-window-video-player_component_403 captions-window-opacity-video-player_component_403"><option id="captions-window-opacity-video-player_component_403-Transparent" value="0" aria-labelledby="captions-window-video-player_component_403 captions-window-opacity-video-player_component_403 captions-window-opacity-video-player_component_403-Transparent" selected="selected">Transparent</option><option id="captions-window-opacity-video-player_component_403-SemiTransparent" value="0.5" aria-labelledby="captions-window-video-player_component_403 captions-window-opacity-video-player_component_403 captions-window-opacity-video-player_component_403-SemiTransparent">Semi-Transparent</option><option id="captions-window-opacity-video-player_component_403-Opaque" value="1" aria-labelledby="captions-window-video-player_component_403 captions-window-opacity-video-player_component_403 captions-window-opacity-video-player_component_403-Opaque">Opaque</option></select></span></fieldset></div><div class="vjs-track-settings-font"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-video-player_component_403" class="">Font Size</legend><select aria-labelledby="captions-font-size-video-player_component_403"><option id="captions-font-size-video-player_component_403-50" value="0.50" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-50">50%</option><option id="captions-font-size-video-player_component_403-75" value="0.75" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-75">75%</option><option id="captions-font-size-video-player_component_403-100" value="1.00" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-100" selected="selected">100%</option><option id="captions-font-size-video-player_component_403-125" value="1.25" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-125">125%</option><option id="captions-font-size-video-player_component_403-150" value="1.50" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-150">150%</option><option id="captions-font-size-video-player_component_403-175" value="1.75" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-175">175%</option><option id="captions-font-size-video-player_component_403-200" value="2.00" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-200">200%</option><option id="captions-font-size-video-player_component_403-300" value="3.00" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-300">300%</option><option id="captions-font-size-video-player_component_403-400" value="4.00" aria-labelledby="captions-font-size-video-player_component_403 captions-font-size-video-player_component_403-400">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="video-player_component_403" class="">Text Edge Style</legend><select aria-labelledby="video-player_component_403"><option id="video-player_component_403-None" value="none" aria-labelledby="video-player_component_403 video-player_component_403-None" selected="selected">None</option><option id="video-player_component_403-Raised" value="raised" aria-labelledby="video-player_component_403 video-player_component_403-Raised">Raised</option><option id="video-player_component_403-Depressed" value="depressed" aria-labelledby="video-player_component_403 video-player_component_403-Depressed">Depressed</option><option id="video-player_component_403-Uniform" value="uniform" aria-labelledby="video-player_component_403 video-player_component_403-Uniform">Uniform</option><option id="video-player_component_403-Dropshadow" value="dropshadow" aria-labelledby="video-player_component_403 video-player_component_403-Dropshadow">Dropshadow</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-video-player_component_403" class="">Font Family</legend><select aria-labelledby="captions-font-family-video-player_component_403"><option id="captions-font-family-video-player_component_403-ProportionalSansSerif" value="proportionalSansSerif" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-ProportionalSansSerif" selected="selected">Proportional Sans-Serif</option><option id="captions-font-family-video-player_component_403-MonospaceSansSerif" value="monospaceSansSerif" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-MonospaceSansSerif">Monospace Sans-Serif</option><option id="captions-font-family-video-player_component_403-ProportionalSerif" value="proportionalSerif" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-ProportionalSerif">Proportional Serif</option><option id="captions-font-family-video-player_component_403-MonospaceSerif" value="monospaceSerif" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-MonospaceSerif">Monospace Serif</option><option id="captions-font-family-video-player_component_403-Casual" value="casual" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-Casual">Casual</option><option id="captions-font-family-video-player_component_403-Script" value="script" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-Script">Script</option><option id="captions-font-family-video-player_component_403-SmallCaps" value="small-caps" aria-labelledby="captions-font-family-video-player_component_403 captions-font-family-video-player_component_403-SmallCaps">Small Caps</option></select></fieldset></div><div class="vjs-track-settings-controls"><button type="button" class="vjs-default-button" title="restore all settings to the default values">Reset<span class="vjs-control-text"> restore all settings to the default values</span></button><button type="button" class="vjs-done-button">Done</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" aria-disabled="false" title="Close Modal Dialog"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-control-text">End of dialog window.</p></div></video-js>
+        </div>
+</section>
+                
+                    
+                        <h2 class="video-transcription-title">Transcrição</h2>
+                    
+                    <section id="transcription" class="video-transcription transcription-toggle">
+                        <div class="formattedText" data-external-links="">
+                                <p>Para que possamos utilizar o 
+TypeScript precisamos da plataforma Node.js instalada. Aliás, essa 
+plataforma já era um requisito de infraestrutura apontado no exercício 
+obrigatório do capítulo. </p>
+<p>É através do gerenciador de pacotes do <code>Node.js</code> que instalamos o TypeScript, mas primeiro, precisamos criar o arquivo <code>package.json</code> que nada mais é do que uma "caderneta" na qual temos registrados todos os módulos da aplicação baixados pelo npm.</p>
+<p>Através do seu terminal favorito, vamos acessar a pasta <code>alurabank</code>. Dentro dela, vamos executar o comando:</p>
+<pre class="prettyprint"><code><span class="pln">npm init</span></code></pre>
+<p>Podemos teclar ENTER para todas as perguntas. No final, teremos o arquivo <code>alurabank/package.json</code>:</p>
+<pre class="prettyprint"><code><span class="pun">{</span><span class="pln">
+  </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"alurabank"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"version"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1.0.0"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"main"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"index.js"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"test"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  </span><span class="str">"author"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"license"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISC"</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora que temos nosso arquivo criado, vamos solicitar ao npm que instale o TypeScript para nós:</p>
+<pre class="prettyprint"><code><span class="pln">npm install typescript@2</span><span class="pun">.</span><span class="lit">3.2</span><span class="pln"> </span><span class="pun">--</span><span class="pln">save</span><span class="pun">-</span><span class="pln">dev</span></code></pre>
+<p>Dentro de instantes ele será instalado dentro da pasta <code>alurabank/node_modules</code>.
+ Esse passo não é suficiente, precisamos configurar o compilador. Aliás,
+ muitas IDE's escondem esses detalhes do desenvolvedor, mas 
+inevitavelmente cedo ou tarde ele terá que lidar com essas configurações
+ para poder alterar o comportamento do compilador do TypeScript. Este 
+curso, mesmo sendo introdutório, o deixará seguro com tudo o que 
+acontece por debaixo dos panos.</p>
+<p>O próximo passo será renomearmos a pasta <code>alurabank/app/js</code> para <code>alurabank/app/ts</code>, inclusive vamos mudar a extensão dos arquivos <code>app.js</code> e <code>Negociacao.js</code> respectivamente para <code>app.ts</code> e <code>Negociacao.ts</code>. Afinal, a extensão <code>.ts</code> é aquela de todo arquivo TypeScript.</p>
+<h2>O arquivo tsconfig.json</h2>
+<p>Precisamos criar o arquivo <code>alurabank/tsconfig.json</code> que guardará as configurações do nosso compilador.</p>
+<pre class="prettyprint"><code><span class="pun">{</span><span class="pln">
+    </span><span class="str">"compilerOptions"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"target"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"es6"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"outDir"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"app/js"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="str">"include"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="str">"app/ts/**/*"</span><span class="pln">
+    </span><span class="pun">]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Nele, indicamos em <code>compilerOptions</code> as configurações do compilador. No caso, indicamos que o resultado final da compilação será um código compatível com <code>es6</code> e que eles ficarão dentro da pasta <code>app/js</code>.  Por fim, em <code>include</code>, indicamos o local onde o compilador deve buscar seus arquivos.</p>
+<p>Excelente, temos a configuração mínima para que nosso compilador 
+funcione, mas como o executaremos? Uma boa prática é criarmos um script 
+em nosso <code>package.json</code> que se encarregará de chamá-lo para nós através do terminal.</p>
+<p>Vamos alterar  <code>alurabank/package.json</code> e adicionarmos o script:</p>
+<pre class="prettyprint"><code><span class="pln">    </span><span class="str">"compile"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"tsc"</span></code></pre>
+<p>Nosso package.json ficará assim:</p>
+<pre class="prettyprint"><code><span class="pun">{</span><span class="pln">
+  </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"alurabank"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"version"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1.0.0"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"main"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"index.js"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"test"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"compile"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"tsc"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  </span><span class="str">"author"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"license"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ISC"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"devDependencies"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"typescript"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"^2.3.2"</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Feche e abra o VSCode para que ele possa levar em consideração as configurações que realizamos no compilador.</p>
+<p>Agora, através do terminal, ainda dentro da pasta <code>alurabank</code> faremos:</p>
+<pre class="prettyprint"><code><span class="pln">npm run compile</span></code></pre>
+<p>Após a conclusão do comando, veremos uma série de mensagens de erro, 
+inclusive no próprio visual studio code veremos as mesmas mensagens em 
+todo lugar que estiver sublinhado de vermelho. Isso significa que houve 
+algum problema de compilação do nosso código que precisamos resolver, ou
+ seja, alguma sintaxe não compatível com TypeScript.</p>
+
+                        </div>
+                    </section>
+                    
+                        <button class="video-transcription-button transcription-toggle" aria-hidden="true" style="display: none;">
+                            <span class="video-transcription-button-text">
+                                    continuar lendo</span>
+                        </button>
+                    
+                
+            </div>
+        </section>
+    
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+    <a href="https://cursos.alura.com.br/forum/curso-typescript-parte1/exercicio-instalacao-e-configuracao-do-compilador/26749/novo" class=" task-actions-button task-actions-button-forum" target="_blank">Discutir no Forum</a>
+
+
+
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26749/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button openMenu-button--inactive task-menu-button--inactive"></button>
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-340.4px);">
+	<section class="task-menu-header">
+		<button title="Abrir menu" aria-label="Abrir menu" type="button" class="openMenu-button task-menu-button openMenu-button--inactive task-menu-button--inactive"></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/typescript-parte1" title="Ir para página do curso">
+				
+					
+					
+						<img src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/typescript-parte1.svg" alt="ícone TypeScript parte 1: Evoluindo seu Javascript" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">TypeScript parte 1: Evoluindo seu Javascript</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">10%</span>
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 10%, transparent 10%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+	<div class="task-menu-others task-menu-notes">
+		<button class="task-menu-others-link class-notes-button" title="Abrir caderno">Abrir caderno</button>
+	</div>
+
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>01</strong>
+				<span>de 05</span></span>
+			<h3 class="task-menu-section-title-text">
+				Bem começado, metade feito
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>7 de 13</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26739" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Introdução">
+							Introdução
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">03min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26743" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Infraestrutura necessária (Obrigatório)">
+							Infraestrutura necessária (Obrigatório)
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26750" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O projeto e sua estrutura">
+							O projeto e sua estrutura
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">02min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26740" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Modelando uma negociação">
+							Modelando uma negociação
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/27796" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="ES2015 e classes">
+							ES2015 e classes
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26994" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Colocando nosso código à prova">
+							Colocando nosso código à prova
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">05min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26749" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg  task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Instalação e configuração do compilador">
+							Instalação e configuração do compilador
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">10min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/27797" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Sobre o compilador do TypeScript">
+							Sobre o compilador do TypeScript
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26879" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Modelando com TypeScript">
+							Modelando com TypeScript
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">09min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/27798" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Única escolha não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="TypeScript e classes">
+							TypeScript e classes
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26974" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Automatizando o processo de compilação">
+							Automatizando o processo de compilação
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">03min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/26751" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Revisão">
+							Revisão
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">03min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/typescript-parte1/task/27795" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+						<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+							
+								
+								<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+							
+							
+						
+					</svg>
+					<span class="task-menu-nav-item-number">13</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Consolidando seu conhecimento">
+							Consolidando seu conhecimento
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/typescript-parte1/section/'+this.value+'/tasks';">
+			
+				<option value="5046" selected="selected">01. Bem começado, metade feito</option>
+			
+				<option value="5072">02. Benefícios da tipagem estática</option>
+			
+				<option value="5087">03. Elaborando uma solução de view</option>
+			
+				<option value="5075">04. Herança, reaproveitamento de código</option>
+			
+				<option value="5076">05. TypeScript definitions</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-typescript-parte1/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/perinng" title="Ir para sua página de usuário">
+			<img src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/c5e9ead7f80a8ed147549256414ffdf9.webp" alt="Gravatar de PAULO FELIPE PERIN DA CRUZ" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">PAULO FELIPE PERIN DA CRUZ</span>
+					<span class="task-menu-footer-detalhes-xp">
+						33.0k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" title="Ir para a página principal" width="19px" height="32px">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/jquery-2.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/buttonToggle.js" async=""></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/sectionMenu.js" async=""></script>
+
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/marked.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/markdownEditor.js" async=""></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/caret.js" async=""></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/keydownWatchers.js" async=""></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/prettify.js" async=""></script>
+
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/preventsMultipleInteractions.js" async=""></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/assessment.js" async=""></script>
+
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/menuSettings.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/aria.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ProjectSubmit.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/classPage.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/phrase.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/feedback.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ExtraContentProgressRequest.js"></script>
+	
+	
+		<!-- video specific -->
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video-js.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/silvermine-videojs-quality-selector.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/vimeo.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/dash.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/videojs-dash.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/video_002.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/VideoPlayer.js"></script>
+		<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/scroll-top.js"></script>
+	
+
+	
+	
+	
+	
+
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/partitura.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioProgress.js"></script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/audioPlayer.js"></script>
+
+		
+
+	
+
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/darkMode.js">
+	</script>
+
+	
+		
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '437065');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+	<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/ClassNotes.js">
+	</script>
+<script>
+	new ClassNotes().refreshListeners();
+</script>
+
+
+
+
+
+
+<script src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/MarkdownProcessing.js"></script>
+<script>
+	new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+</script><script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="TypeScript%20parte%201%20Aula%201%20-%20Atividade%207%20Instala%C3%A7%C3%A3o%20e%20configura%C3%A7%C3%A3o%20do%20compilador%20Alura%20-%20Cursos%20online%20de%20tecnologia_arquivos/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe></body></html>
