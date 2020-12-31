@@ -1,0 +1,14 @@
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.deps.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.runtimeconfig.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.runtimeconfig.dev.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.Core.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.2\LeilaoOnline.Core.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.AssemblyInfoInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.AssemblyInfo.cs
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.csproj.CopyComplete
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.2\LeilaoOnline.ConsoleApp.pdb

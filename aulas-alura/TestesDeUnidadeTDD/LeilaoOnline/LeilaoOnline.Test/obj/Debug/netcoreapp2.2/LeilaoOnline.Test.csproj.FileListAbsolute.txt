@@ -1,0 +1,17 @@
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Test.deps.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Test.runtimeconfig.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Test.runtimeconfig.dev.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Test.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Test.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Core.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\bin\Debug\netcoreapp2.2\LeilaoOnline.Core.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.AssemblyInfoInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.AssemblyInfo.cs
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.csproj.CopyComplete
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Test\obj\Debug\netcoreapp2.2\LeilaoOnline.Test.pdb

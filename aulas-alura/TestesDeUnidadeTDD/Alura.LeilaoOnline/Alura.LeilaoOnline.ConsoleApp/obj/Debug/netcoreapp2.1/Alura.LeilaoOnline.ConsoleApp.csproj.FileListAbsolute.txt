@@ -1,0 +1,14 @@
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.deps.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.runtimeconfig.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.runtimeconfig.dev.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.AssemblyInfoInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.AssemblyInfo.cs
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.csproj.CopyComplete
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.pdb

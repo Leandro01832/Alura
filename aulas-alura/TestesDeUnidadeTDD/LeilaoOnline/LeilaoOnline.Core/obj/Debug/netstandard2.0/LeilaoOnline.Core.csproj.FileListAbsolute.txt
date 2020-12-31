@@ -1,0 +1,9 @@
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\bin\Debug\netstandard2.0\LeilaoOnline.Core.deps.json
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\bin\Debug\netstandard2.0\LeilaoOnline.Core.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\bin\Debug\netstandard2.0\LeilaoOnline.Core.pdb
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.AssemblyInfoInputs.cache
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.AssemblyInfo.cs
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.dll
+F:\Projects\AulasAlura\TestesDeUnidadeTDD\LeilaoOnline\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.pdb
