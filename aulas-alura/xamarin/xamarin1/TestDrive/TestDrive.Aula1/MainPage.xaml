@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestDrive"
+             x:Class="TestDrive.MainPage">
+
+    <StackLayout Padding="25">
+        <ListView x:Name="listViewVeiculos" ItemsSource="{Binding Veiculos}" Margin="15"
+                  ItemTapped="ListViewVeiculos_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <!--<Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding Nome}" FontSize="Large"></Span>
+                                            <Span Text=" - "></Span>
+                                            <Span Text="{Binding Preco}" FontAttributes="Bold" FontSize="Medium" ></Span>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>-->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding nome}" FontSize="Large" VerticalTextAlignment="Center"></Label>
+                                <Label Text=" - " VerticalTextAlignment="Center"></Label>
+                                <Label Text="{Binding PrecoFormatado}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

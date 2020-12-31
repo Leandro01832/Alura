@@ -1,0 +1,12 @@
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+F:\Projects\AulasAlura\xamarin\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb

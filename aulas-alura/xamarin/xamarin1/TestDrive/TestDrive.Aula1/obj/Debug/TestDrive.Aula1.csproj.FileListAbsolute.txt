@@ -1,0 +1,17 @@
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\TestDrive.dll
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\TestDrive.pdb
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Core.dll
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Platform.dll
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Xaml.dll
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Core.pdb
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Core.xml
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Platform.pdb
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Xaml.pdb
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\bin\Debug\Xamarin.Forms.Xaml.xml
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.Aula1.csprojAssemblyReference.cache
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.Aula1.csproj.CoreCompileInputs.cache
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.MainPage.xaml.g.cs
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.App.xaml.g.cs
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.Aula1.csproj.CopyComplete
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.dll
+F:\Projects\AulasAlura\xamarin\xamarin1\TestDrive\TestDrive.Aula1\obj\Debug\TestDrive.pdb

@@ -1,0 +1,39 @@
+CalculadoraView.xaml.cs
+=======================
+
+public partial class CalculadoraView : ContentPage
+{
+    public CalculadoraView()
+    {
+        InitializeComponent();
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        MessagingCenter.Subscribe<CalculadoraViewModel, decimal>(this, "SomaCalculada",
+            (sender, msg) =>
+            {
+                DisplayAlert("Soma", 
+                    string.Format("O resultado da soma é: {0}", msg), "Ok");
+            });
+    }
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        MessagingCenter.Unsubscribe<CalculadoraViewModel, decimal>(this, "SomaCalculada");
+    }
+}
+
+CalculadoraViewModel.cs
+=======================
+
+public class CalculadoraViewModel
+{
+    public void CalculaSoma(decimal parcela1, decimal parcela2)
+    {
+        decimal soma = parcela1 + parcela2;
+        MessagingCenter.Send<CalculadoraViewModel, decimal>(this, "SomaCalculada", soma);
+    }
+}
